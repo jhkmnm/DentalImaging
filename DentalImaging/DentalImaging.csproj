@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC08EDB8-CBEB-44A0-8928-C5B42EBBB2D5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DentalImaging</RootNamespace>
+    <AssemblyName>DentalImaging</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>C:\Users\jhkmnm\Downloads\AForge.NET Framework-2.2.5\Release\AForge.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="AForge.Controls">
+      <HintPath>C:\Users\jhkmnm\Downloads\87361005Camera-use-AForge\Camera\Camera\Aforge\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>C:\Users\jhkmnm\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>C:\Users\jhkmnm\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>C:\Users\jhkmnm\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.FFMPEG">
+      <HintPath>C:\Users\jhkmnm\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.FFMPEG.dll</HintPath>
+    </Reference>
+    <Reference Include="ChnCharInfo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=18f031bd02e5e291, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.International.Converters.PinYinConverter.1.0.0\lib\ChnCharInfo.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.BonusSkins.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.BonusSkins.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.Data.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.Office.v14.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.Printing.v14.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.RichEdit.v14.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.Sparkline.v14.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.Utils.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.XtraBars.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.XtraEditors.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.XtraGrid.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.XtraLayout.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.XtraNavBar.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.XtraPrinting.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.XtraRichEdit.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v14.1.Extensions, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.XtraRichEdit.v14.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.XtraTreeList.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="LibUsbDotNet, Version=2.2.8.104, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\LibUsbDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\01-仓库系统框架\WHC.Framework.StarterDx\bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="MJPEGDLL">
+      <HintPath>..\Debug\MJPEGDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Help\AppHotKey.cs" />
+    <Compile Include="Help\CommHelp.cs" />
+    <Compile Include="Help\MessageBase.cs" />
+    <Compile Include="Model\ReportSource.cs" />
+    <Compile Include="Model\UsbMessage.cs" />
+    <Compile Include="Model\VideoParm.cs" />
+    <Compile Include="Other\CListItem.cs" />
+    <Compile Include="Other\GlobalControl.cs" />
+    <Compile Include="拍摄\FormFormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="拍摄\FormFormat.Designer.cs">
+      <DependentUpon>FormFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="拍摄\FormToothMap2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="拍摄\FormToothMap2.Designer.cs">
+      <DependentUpon>FormToothMap2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新界面\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新界面\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新界面\FormHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新界面\FormHistory.Designer.cs">
+      <DependentUpon>FormHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新界面\FormImageEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新界面\FormImageEdit.Designer.cs">
+      <DependentUpon>FormImageEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新界面\FormPatientEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新界面\FormPatientEdit.Designer.cs">
+      <DependentUpon>FormPatientEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新界面\FrmItemDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新界面\FrmItemDetail.designer.cs">
+      <DependentUpon>FrmItemDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新界面\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新界面\MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新界面\ReportViewerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新界面\ReportViewerDialog.Designer.cs">
+      <DependentUpon>ReportViewerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新界面\VideoSettingWifi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新界面\VideoSettingWifi.Designer.cs">
+      <DependentUpon>VideoSettingWifi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新界面\VideoSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新界面\VideoSetting.Designer.cs">
+      <DependentUpon>VideoSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="拍摄\FormPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="拍摄\FormPicture.Designer.cs">
+      <DependentUpon>FormPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help\Encryption.cs" />
+    <Compile Include="Help\Extend.cs" />
+    <Compile Include="Help\ImageClass.cs" />
+    <Compile Include="Help\ImgBase64.cs" />
+    <Compile Include="Help\TimeClass.cs" />
+    <Compile Include="Help\UsbHelp.cs" />
+    <Compile Include="Model\DrawControl.cs" />
+    <Compile Include="Model\ImgInfo.cs" />
+    <Compile Include="Model\Patient.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Help\PinYinConverterHelp.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <None Include="Log4Net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\DataSources\BindImgListSource.datasource" />
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="拍摄\FormFormat.resx">
+      <DependentUpon>FormFormat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="拍摄\FormToothMap2.resx">
+      <DependentUpon>FormToothMap2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新界面\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新界面\FormHistory.resx">
+      <DependentUpon>FormHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新界面\FormImageEdit.resx">
+      <DependentUpon>FormImageEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新界面\FormPatientEdit.resx">
+      <DependentUpon>FormPatientEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新界面\FrmItemDetail.resx">
+      <DependentUpon>FrmItemDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新界面\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新界面\ReportViewerDialog.resx">
+      <DependentUpon>ReportViewerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新界面\VideoSettingWifi.resx">
+      <DependentUpon>VideoSettingWifi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新界面\VideoSetting.resx">
+      <DependentUpon>VideoSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="拍摄\FormPicture.resx">
+      <DependentUpon>FormPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\DentalImaging.Model.Patient.datasource" />
+    <None Include="Properties\DataSources\DentalImaging.Model.ReportSource.datasource" />
+    <None Include="Properties\DataSources\ImgInfo.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SplashScreen\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1543660125%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timg %281%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
