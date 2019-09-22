@@ -98,6 +98,8 @@ namespace DentalImaging
         #region Wifi
         private bool ConnectionWifiVideo()
         {
+            if (User.LinkType == LinkType.USB) return false;
+
             Ping pingSender = new Ping();
             try
             {

@@ -6,6 +6,7 @@ using DentalImaging.Model;
 using log4net;
 using System.IO;
 using log4net.Config;
+using DentalImaging.新界面;
 
 namespace DentalImaging
 {
@@ -45,9 +46,13 @@ namespace DentalImaging
                 //处理非UI线程异常
                 AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
 
-                gc.MainDialog = new MainForm();
-                gc.MainDialog.StartPosition = FormStartPosition.CenterScreen;
-                Application.Run(gc.MainDialog);
+                ChannelChoose choose = new ChannelChoose();
+                if (choose.ShowDialog() == DialogResult.OK)
+                {
+                    gc.MainDialog = new MainForm();
+                    gc.MainDialog.StartPosition = FormStartPosition.CenterScreen;
+                    Application.Run(gc.MainDialog);
+                }
             }
             catch(Exception ex)
             {

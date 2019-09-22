@@ -173,6 +173,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\01-仓库系统框架\WHC.Framework.StarterDx\bin\Debug\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="ManagedWifi">
+      <HintPath>D:\软件\开发工具\ManagedWifi.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Build" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
       <Private>True</Private>
@@ -204,9 +207,11 @@
     <Compile Include="Help\AppHotKey.cs" />
     <Compile Include="Help\CommHelp.cs" />
     <Compile Include="Help\MessageBase.cs" />
+    <Compile Include="Help\WifiHelp.cs" />
     <Compile Include="Model\ReportSource.cs" />
     <Compile Include="Model\UsbMessage.cs" />
     <Compile Include="Model\VideoParm.cs" />
+    <Compile Include="Model\WifiInfo.cs" />
     <Compile Include="Other\CListItem.cs" />
     <Compile Include="Other\GlobalControl.cs" />
     <Compile Include="拍摄\FormFormat.cs">
@@ -226,6 +231,12 @@
     </Compile>
     <Compile Include="新界面\AboutBox.Designer.cs">
       <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新界面\ChannelChoose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新界面\ChannelChoose.Designer.cs">
+      <DependentUpon>ChannelChoose.cs</DependentUpon>
     </Compile>
     <Compile Include="新界面\FormHistory.cs">
       <SubType>Form</SubType>
@@ -300,6 +311,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
+    <Compile Include="新界面\WifiPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新界面\WifiPassword.Designer.cs">
+      <DependentUpon>WifiPassword.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="新界面\WifiPassword.resx">
+      <DependentUpon>WifiPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Log4Net.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -313,6 +333,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="新界面\AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新界面\ChannelChoose.resx">
+      <DependentUpon>ChannelChoose.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="新界面\FormHistory.resx">
       <DependentUpon>FormHistory.cs</DependentUpon>
@@ -406,13 +429,13 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="SplashScreen\" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\1543660125%281%29.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\timg %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Language\en\Basic.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

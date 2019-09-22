@@ -17,8 +17,6 @@ namespace WareHouseMis.UI
                 this.Text = string.Format("{0}-{1}", Manufacturer, ApplicationName);
                 this.labelProductName.Text = ApplicationName;
                 this.labelVersion.Text = String.Format("版本 {0}", AssemblyVersion);
-                //this.labelCopyright.Text = AssemblyCopyright;
-                //this.labelCompanyName.Text = Manufacturer;
                 this.textBoxDescription.Text = "Dental Intraoral Camera,  Jun  2018 是Bangvo 注册的专利技术";
             }
             catch { }

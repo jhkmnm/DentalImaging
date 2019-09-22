@@ -41,8 +41,8 @@ namespace WareHouseMis.UI
         {
             get { return lblCurrentUser.Caption; }
             set { lblCurrentUser.Caption = value; }
-        } 
-        #endregion 
+        }
+        #endregion
 
         public MainForm()
         {
@@ -66,13 +66,11 @@ namespace WareHouseMis.UI
 
             InitSkinGallery();
             UserLookAndFeel.Default.SetSkinStyle("Office 2010 Blue");
-            
+
             if (User.Patients == null)
             {
                 User.Patients = new List<Patient>();
             }
-
-            //SplashScreen.Splasher.Close();
 
             ribbonControl.Enabled = User.IsRegist;
         }        

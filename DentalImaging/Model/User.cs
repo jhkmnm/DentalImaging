@@ -29,6 +29,11 @@ namespace DentalImaging.Model
 
         public static string  DBPath { get; set; }
 
+        /// <summary>
+        /// 连接方式
+        /// </summary>
+        public static LinkType LinkType { get; set; }
+
         //public static int PageCount { get; set; }
         //public static bool IsAll { get; set; }
 
@@ -164,5 +169,11 @@ namespace DentalImaging.Model
             Bitmap bit = new Bitmap(result);
             return bit;
         }
+    }
+
+    public enum LinkType
+    {
+        USB,
+        WIFI
     }
 }

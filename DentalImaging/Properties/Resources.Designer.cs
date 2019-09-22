@@ -73,16 +73,6 @@ namespace DentalImaging.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap IDB_FOLDER {
-            get {
-                object obj = ResourceManager.GetObject("IDB_FOLDER", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
         internal static System.Drawing.Bitmap timg__1_ {
             get {
                 object obj = ResourceManager.GetObject("timg (1)", resourceCulture);
