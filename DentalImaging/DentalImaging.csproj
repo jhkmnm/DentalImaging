@@ -173,9 +173,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\01-仓库系统框架\WHC.Framework.StarterDx\bin\Debug\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="ManagedWifi">
-      <HintPath>D:\软件\开发工具\ManagedWifi.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Build" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
       <Private>True</Private>
@@ -187,6 +184,9 @@
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="SimpleWifi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleWifi.1.0.0.0\lib\net40\SimpleWifi.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -206,90 +206,84 @@
   <ItemGroup>
     <Compile Include="Help\AppHotKey.cs" />
     <Compile Include="Help\CommHelp.cs" />
+    <Compile Include="Help\LanguageHelp.cs" />
     <Compile Include="Help\MessageBase.cs" />
-    <Compile Include="Help\WifiHelp.cs" />
     <Compile Include="Model\ReportSource.cs" />
     <Compile Include="Model\UsbMessage.cs" />
     <Compile Include="Model\VideoParm.cs" />
     <Compile Include="Model\WifiInfo.cs" />
     <Compile Include="Other\CListItem.cs" />
     <Compile Include="Other\GlobalControl.cs" />
-    <Compile Include="拍摄\FormFormat.cs">
+    <Compile Include="Picture\FormFormat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="拍摄\FormFormat.Designer.cs">
+    <Compile Include="Picture\FormFormat.Designer.cs">
       <DependentUpon>FormFormat.cs</DependentUpon>
     </Compile>
-    <Compile Include="拍摄\FormToothMap2.cs">
+    <Compile Include="Picture\FormToothMap2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="拍摄\FormToothMap2.Designer.cs">
+    <Compile Include="Picture\FormToothMap2.Designer.cs">
       <DependentUpon>FormToothMap2.cs</DependentUpon>
     </Compile>
-    <Compile Include="新界面\AboutBox.cs">
+    <Compile Include="NewForm\ChannelChoose.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="新界面\AboutBox.Designer.cs">
-      <DependentUpon>AboutBox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="新界面\ChannelChoose.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="新界面\ChannelChoose.Designer.cs">
+    <Compile Include="NewForm\ChannelChoose.Designer.cs">
       <DependentUpon>ChannelChoose.cs</DependentUpon>
     </Compile>
-    <Compile Include="新界面\FormHistory.cs">
+    <Compile Include="NewForm\FormHistory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="新界面\FormHistory.Designer.cs">
+    <Compile Include="NewForm\FormHistory.Designer.cs">
       <DependentUpon>FormHistory.cs</DependentUpon>
     </Compile>
-    <Compile Include="新界面\FormImageEdit.cs">
+    <Compile Include="NewForm\FormImageEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="新界面\FormImageEdit.Designer.cs">
+    <Compile Include="NewForm\FormImageEdit.Designer.cs">
       <DependentUpon>FormImageEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="新界面\FormPatientEdit.cs">
+    <Compile Include="NewForm\FormPatientEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="新界面\FormPatientEdit.Designer.cs">
+    <Compile Include="NewForm\FormPatientEdit.Designer.cs">
       <DependentUpon>FormPatientEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="新界面\FrmItemDetail.cs">
+    <Compile Include="NewForm\FrmItemDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="新界面\FrmItemDetail.designer.cs">
+    <Compile Include="NewForm\FrmItemDetail.designer.cs">
       <DependentUpon>FrmItemDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="新界面\MainForm.cs">
+    <Compile Include="NewForm\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="新界面\MainForm.designer.cs">
+    <Compile Include="NewForm\MainForm.designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="新界面\ReportViewerDialog.cs">
+    <Compile Include="NewForm\ReportViewerDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="新界面\ReportViewerDialog.Designer.cs">
+    <Compile Include="NewForm\ReportViewerDialog.Designer.cs">
       <DependentUpon>ReportViewerDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="新界面\VideoSettingWifi.cs">
+    <Compile Include="NewForm\VideoSettingWifi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="新界面\VideoSettingWifi.Designer.cs">
+    <Compile Include="NewForm\VideoSettingWifi.Designer.cs">
       <DependentUpon>VideoSettingWifi.cs</DependentUpon>
     </Compile>
-    <Compile Include="新界面\VideoSetting.cs">
+    <Compile Include="NewForm\VideoSetting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="新界面\VideoSetting.Designer.cs">
+    <Compile Include="NewForm\VideoSetting.Designer.cs">
       <DependentUpon>VideoSetting.cs</DependentUpon>
     </Compile>
-    <Compile Include="拍摄\FormPicture.cs">
+    <Compile Include="Picture\FormPicture.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="拍摄\FormPicture.Designer.cs">
+    <Compile Include="Picture\FormPicture.Designer.cs">
       <DependentUpon>FormPicture.cs</DependentUpon>
     </Compile>
     <Compile Include="Help\Encryption.cs" />
@@ -311,60 +305,58 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
-    <Compile Include="新界面\WifiPassword.cs">
+    <Compile Include="NewForm\WifiPassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="新界面\WifiPassword.Designer.cs">
+    <Compile Include="NewForm\WifiPassword.Designer.cs">
       <DependentUpon>WifiPassword.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="新界面\WifiPassword.resx">
+    <EmbeddedResource Include="NewForm\WifiPassword.resx">
       <DependentUpon>WifiPassword.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Language\cn\Basic.json" />
     <None Include="Log4Net.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Properties\DataSources\BindImgListSource.datasource" />
     <None Include="Properties\licenses.licx" />
-    <EmbeddedResource Include="拍摄\FormFormat.resx">
+    <EmbeddedResource Include="Picture\FormFormat.resx">
       <DependentUpon>FormFormat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="拍摄\FormToothMap2.resx">
+    <EmbeddedResource Include="Picture\FormToothMap2.resx">
       <DependentUpon>FormToothMap2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="新界面\AboutBox.resx">
-      <DependentUpon>AboutBox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="新界面\ChannelChoose.resx">
+    <EmbeddedResource Include="NewForm\ChannelChoose.resx">
       <DependentUpon>ChannelChoose.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="新界面\FormHistory.resx">
+    <EmbeddedResource Include="NewForm\FormHistory.resx">
       <DependentUpon>FormHistory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="新界面\FormImageEdit.resx">
+    <EmbeddedResource Include="NewForm\FormImageEdit.resx">
       <DependentUpon>FormImageEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="新界面\FormPatientEdit.resx">
+    <EmbeddedResource Include="NewForm\FormPatientEdit.resx">
       <DependentUpon>FormPatientEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="新界面\FrmItemDetail.resx">
+    <EmbeddedResource Include="NewForm\FrmItemDetail.resx">
       <DependentUpon>FrmItemDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="新界面\MainForm.resx">
+    <EmbeddedResource Include="NewForm\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\Report.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="新界面\ReportViewerDialog.resx">
+    <EmbeddedResource Include="NewForm\ReportViewerDialog.resx">
       <DependentUpon>ReportViewerDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="新界面\VideoSettingWifi.resx">
+    <EmbeddedResource Include="NewForm\VideoSettingWifi.resx">
       <DependentUpon>VideoSettingWifi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="新界面\VideoSetting.resx">
+    <EmbeddedResource Include="NewForm\VideoSetting.resx">
       <DependentUpon>VideoSetting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="拍摄\FormPicture.resx">
+    <EmbeddedResource Include="Picture\FormPicture.resx">
       <DependentUpon>FormPicture.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -435,7 +427,9 @@
     <None Include="Resources\timg %281%29.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Language\en\Basic.json" />
+    <Content Include="Language\en\Basic.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

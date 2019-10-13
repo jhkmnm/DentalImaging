@@ -6,7 +6,9 @@ using DentalImaging.Model;
 using log4net;
 using System.IO;
 using log4net.Config;
-using DentalImaging.新界面;
+using System.Configuration;
+using DentalImaging.Help;
+using DentalImaging.NewForm;
 
 namespace DentalImaging
 {
@@ -28,6 +30,7 @@ namespace DentalImaging
                 logger = LogManager.GetLogger(typeof(Portal));
 
                 TimeClass.CreateRegedit();
+                User.Language = ConfigurationManager.AppSettings["Language"];
                 User.Date = TimeClass.InitRegedit();
                 User.IsRegist = User.Date >= 0;
                 //SetUIConstants();
@@ -44,7 +47,7 @@ namespace DentalImaging
                 //处理UI线程异常
                 Application.ThreadException += new System.Threading.ThreadExceptionEventHandler(Application_ThreadException);
                 //处理非UI线程异常
-                AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
+                AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);                
 
                 ChannelChoose choose = new ChannelChoose();
                 if (choose.ShowDialog() == DialogResult.OK)
@@ -86,7 +89,7 @@ namespace DentalImaging
             else
             {
                 //MessageDxUtil.ShowTips("另一个窗口已在运行，不能重复运行。");
-                DevExpress.XtraEditors.XtraMessageBox.Show("另一个窗口已在运行，不能重复运行。", "提示");
+                CommHelp.ShowTips("另一个窗口已在运行，不能重复运行。");
                 Thread.Sleep(1000);
                 Environment.Exit(1);//退出程序
             }

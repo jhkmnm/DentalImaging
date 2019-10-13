@@ -19,49 +19,5 @@ namespace WareHouseMis.UI
         public string gAppWholeName = "";
 
         #endregion
-
-        #region 基本操作函数        
-        /// <summary>
-        /// 退出系统
-        /// </summary>
-        public void Quit()
-        {
-            if (Portal.gc.MainDialog != null)
-            {
-                Portal.gc.MainDialog.Hide();
-                Portal.gc.MainDialog.CloseAllDocuments();
-            }
-
-            Application.Exit();
-        }
-
-        /// <summary>
-        /// 打开帮助文档
-        /// </summary>
-        public void Help()
-        {
-            try
-            {
-                const string helpfile = "Help.chm";
-                Process.Start(helpfile);
-            }
-            catch (Exception)
-            {
-                CommHelp.ShowWarning("文件打开失败");
-            }
-        }
-
-        /// <summary>
-        /// 关于对话框信息
-        /// </summary>
-        public void About()
-        {
-            AboutBox dlg = new AboutBox();
-            dlg.StartPosition = FormStartPosition.CenterScreen;
-            dlg.ShowDialog();
-        }        
-
-        #endregion
-
     }
 }

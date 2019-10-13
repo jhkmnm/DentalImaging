@@ -18,6 +18,7 @@ namespace DentalImaging.Model
             var logCfg = new FileInfo(AppDomain.CurrentDomain.BaseDirectory + "log4net.config");
         }
 
+        public static string Language { get; set; }
         public static bool IsRegist { get; set; }
         public static int Date { get; set; }
 
