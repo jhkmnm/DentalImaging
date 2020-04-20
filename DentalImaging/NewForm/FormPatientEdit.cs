@@ -178,7 +178,7 @@ namespace DentalImaging.NewForm
             BandData();
         }
 
-        private void BandData()
+        public void BandData()
         {
             string tableColumns = "序号,姓名,出生日期,社保号,联系方式,地址";
             DataTable dt = CreateTable(tableColumns);
@@ -203,7 +203,7 @@ namespace DentalImaging.NewForm
                 gridView1.Columns[i].OptionsFilter.AllowAutoFilter = false;
                 gridView1.Columns[i].OptionsFilter.AllowFilter = false;
                 gridView1.Columns[i].OptionsFilter.ImmediateUpdateAutoFilter = false;
-            }            
+            }
         }
 
         private DataTable CreateTable(string columns)

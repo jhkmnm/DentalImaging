@@ -16,8 +16,8 @@ namespace DentalImaging.Model
             Orders.Add("0 0 1 0 0 1 0 0", OrderType.PowerOff);
             Orders.Add("1 1 0 1 1 4 0 0", OrderType.HeartBeat);
 
-            Orders.Add("0 1 0 0 0 1 0 0", OrderType.MTP_Rule_View);
-            Orders.Add("0 2 0 0 0 2 0 0", OrderType.MTP_Rule_See);
+            Orders.Add("0 1 0 0 0 1 0 0", OrderType.MTP_Rule_View);     //微距预览
+            Orders.Add("0 2 0 0 0 2 0 0", OrderType.MTP_Rule_See);      //拍照
 
             Orders.Add("1 4 0 0 0 5 0 0", OrderType.MTP_UV_View);
             Orders.Add("1 8 0 0 0 9 0 0", OrderType.MTP_UV_See);
@@ -26,8 +26,8 @@ namespace DentalImaging.Model
             Orders.Add("2 16 0 0 0 18 0 0", OrderType.MTP_ICON_View);
             Orders.Add("2 32 0 0 0 34 0 0", OrderType.MTP_ICON_See);
 
-            Orders.Add("0 1 0 1 1 3 0 0", OrderType.PReturn_Rule_View);
-            Orders.Add("0 2 0 1 1 4 0 0", OrderType.PReturn_Rule_See);
+            Orders.Add("0 1 0 1 1 3 0 0", OrderType.PReturn_Rule_View);     //微距预览返回
+            Orders.Add("0 2 0 1 1 4 0 0", OrderType.PReturn_Rule_See);  //拍照回发
 
             Orders.Add("1 4 0 1 1 7 0 0", OrderType.PReturn_UV_View);
             Orders.Add("1 8 0 1 1 11 0 0", OrderType.PReturn_UV_See);

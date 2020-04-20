@@ -47,13 +47,13 @@ namespace DentalImaging.NewForm
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(167, 11);
+            this.label1.Location = new System.Drawing.Point(9, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 14);
+            this.label1.Size = new System.Drawing.Size(402, 14);
             this.label1.TabIndex = 0;
             this.label1.Tag = "请选择连接方式";
             this.label1.Text = "请选择连接方式";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
@@ -144,13 +144,13 @@ namespace DentalImaging.NewForm
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(167, 13);
+            this.label2.Location = new System.Drawing.Point(9, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 14);
+            this.label2.Size = new System.Drawing.Size(402, 14);
             this.label2.TabIndex = 5;
             this.label2.Tag = "请选择热点网络";
             this.label2.Text = "请选择热点网络";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ChannelChoose
             // 
@@ -168,7 +168,6 @@ namespace DentalImaging.NewForm
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }

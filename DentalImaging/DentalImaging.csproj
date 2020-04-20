@@ -314,7 +314,9 @@
     <EmbeddedResource Include="NewForm\WifiPassword.resx">
       <DependentUpon>WifiPassword.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Language\cn\Basic.json" />
+    <None Include="Language\cn\Basic.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Log4Net.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

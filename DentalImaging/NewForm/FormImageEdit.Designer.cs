@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormImageEdit));
-            this.btnRotate180 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnRotate90 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnShowRemark = new DevExpress.XtraEditors.SimpleButton();
-            this.btnRotate = new DevExpress.XtraEditors.SimpleButton();
-            this.btnChangeSize = new DevExpress.XtraEditors.SimpleButton();
-            this.btnCutImg = new DevExpress.XtraEditors.SimpleButton();
-            this.btnMirror = new DevExpress.XtraEditors.SimpleButton();
-            this.btnEditRemark = new DevExpress.XtraEditors.SimpleButton();
+            this.btnRotate180 = new System.Windows.Forms.Button();
+            this.btnRotate90 = new System.Windows.Forms.Button();
+            this.btnShowRemark = new System.Windows.Forms.Button();
+            this.btnRotate = new System.Windows.Forms.Button();
+            this.btnChangeSize = new System.Windows.Forms.Button();
+            this.btnCutImg = new System.Windows.Forms.Button();
+            this.btnMirror = new System.Windows.Forms.Button();
+            this.btnEditRemark = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,9 +57,9 @@
             this.btnText2 = new System.Windows.Forms.Button();
             this.btnText1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnDel = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new System.Windows.Forms.Button();
+            this.simpleButton2 = new System.Windows.Forms.Button();
+            this.btnDel = new System.Windows.Forms.Button();
             this.btnColor = new System.Windows.Forms.Button();
             this.ddlPenSize = new System.Windows.Forms.ComboBox();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -68,9 +68,9 @@
             this.ddlRectangle = new System.Windows.Forms.ComboBox();
             this.ddlEllipse = new System.Windows.Forms.ComboBox();
             this.ddlLine = new System.Windows.Forms.ComboBox();
-            this.btnRecovery = new DevExpress.XtraEditors.SimpleButton();
-            this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
-            this.btnChoice = new DevExpress.XtraEditors.SimpleButton();
+            this.btnRecovery = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnChoice = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pRotate = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -147,8 +147,6 @@
             // 
             // btnRotate
             // 
-            this.btnRotate.Appearance.Font = new System.Drawing.Font("Tahoma", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRotate.Appearance.Options.UseFont = true;
             this.btnRotate.Location = new System.Drawing.Point(12, 141);
             this.btnRotate.Name = "btnRotate";
             this.btnRotate.Size = new System.Drawing.Size(56, 60);
@@ -253,10 +251,10 @@
             this.tabControl1.Controls.Add(this.tpbKuang);
             this.tabControl1.Controls.Add(this.tpgYuan);
             this.tabControl1.Controls.Add(this.tpgText);
-            this.tabControl1.Location = new System.Drawing.Point(261, 32);
+            this.tabControl1.Location = new System.Drawing.Point(254, 32);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(178, 77);
+            this.tabControl1.Size = new System.Drawing.Size(212, 77);
             this.tabControl1.TabIndex = 29;
             this.tabControl1.Click += new System.EventHandler(this.tabControl1_Click);
             // 
@@ -268,7 +266,7 @@
             this.tpgLine.Location = new System.Drawing.Point(4, 23);
             this.tpgLine.Name = "tpgLine";
             this.tpgLine.Padding = new System.Windows.Forms.Padding(3);
-            this.tpgLine.Size = new System.Drawing.Size(170, 50);
+            this.tpgLine.Size = new System.Drawing.Size(204, 50);
             this.tpgLine.TabIndex = 0;
             this.tpgLine.Tag = "线条";
             this.tpgLine.Text = "线条";
@@ -277,7 +275,7 @@
             // btnLine3
             // 
             this.btnLine3.Image = ((System.Drawing.Image)(resources.GetObject("btnLine3.Image")));
-            this.btnLine3.Location = new System.Drawing.Point(122, 5);
+            this.btnLine3.Location = new System.Drawing.Point(147, 5);
             this.btnLine3.Name = "btnLine3";
             this.btnLine3.Size = new System.Drawing.Size(41, 39);
             this.btnLine3.TabIndex = 4;
@@ -288,7 +286,7 @@
             // btnLine2
             // 
             this.btnLine2.Image = ((System.Drawing.Image)(resources.GetObject("btnLine2.Image")));
-            this.btnLine2.Location = new System.Drawing.Point(64, 5);
+            this.btnLine2.Location = new System.Drawing.Point(83, 5);
             this.btnLine2.Name = "btnLine2";
             this.btnLine2.Size = new System.Drawing.Size(41, 39);
             this.btnLine2.TabIndex = 3;
@@ -299,7 +297,7 @@
             // btnLine1
             // 
             this.btnLine1.Image = ((System.Drawing.Image)(resources.GetObject("btnLine1.Image")));
-            this.btnLine1.Location = new System.Drawing.Point(8, 5);
+            this.btnLine1.Location = new System.Drawing.Point(17, 5);
             this.btnLine1.Name = "btnLine1";
             this.btnLine1.Size = new System.Drawing.Size(41, 39);
             this.btnLine1.TabIndex = 2;
@@ -314,7 +312,7 @@
             this.tpbKuang.Location = new System.Drawing.Point(4, 23);
             this.tpbKuang.Name = "tpbKuang";
             this.tpbKuang.Padding = new System.Windows.Forms.Padding(3);
-            this.tpbKuang.Size = new System.Drawing.Size(170, 50);
+            this.tpbKuang.Size = new System.Drawing.Size(204, 50);
             this.tpbKuang.TabIndex = 1;
             this.tpbKuang.Tag = "矩形";
             this.tpbKuang.Text = "矩形";
@@ -323,7 +321,7 @@
             // btnRectangle2
             // 
             this.btnRectangle2.Image = ((System.Drawing.Image)(resources.GetObject("btnRectangle2.Image")));
-            this.btnRectangle2.Location = new System.Drawing.Point(93, 6);
+            this.btnRectangle2.Location = new System.Drawing.Point(127, 6);
             this.btnRectangle2.Name = "btnRectangle2";
             this.btnRectangle2.Size = new System.Drawing.Size(41, 39);
             this.btnRectangle2.TabIndex = 1;
@@ -348,7 +346,7 @@
             this.tpgYuan.Controls.Add(this.btnEllipse1);
             this.tpgYuan.Location = new System.Drawing.Point(4, 23);
             this.tpgYuan.Name = "tpgYuan";
-            this.tpgYuan.Size = new System.Drawing.Size(170, 50);
+            this.tpgYuan.Size = new System.Drawing.Size(204, 50);
             this.tpgYuan.TabIndex = 2;
             this.tpgYuan.Tag = "圆";
             this.tpgYuan.Text = "圆";
@@ -357,7 +355,7 @@
             // btnEllipse2
             // 
             this.btnEllipse2.Image = ((System.Drawing.Image)(resources.GetObject("btnEllipse2.Image")));
-            this.btnEllipse2.Location = new System.Drawing.Point(93, 6);
+            this.btnEllipse2.Location = new System.Drawing.Point(123, 6);
             this.btnEllipse2.Name = "btnEllipse2";
             this.btnEllipse2.Size = new System.Drawing.Size(41, 39);
             this.btnEllipse2.TabIndex = 6;
@@ -382,7 +380,7 @@
             this.tpgText.Controls.Add(this.btnText1);
             this.tpgText.Location = new System.Drawing.Point(4, 23);
             this.tpgText.Name = "tpgText";
-            this.tpgText.Size = new System.Drawing.Size(170, 50);
+            this.tpgText.Size = new System.Drawing.Size(204, 50);
             this.tpgText.TabIndex = 3;
             this.tpgText.Tag = "文字";
             this.tpgText.Text = "文字";
@@ -391,7 +389,7 @@
             // btnText2
             // 
             this.btnText2.Image = ((System.Drawing.Image)(resources.GetObject("btnText2.Image")));
-            this.btnText2.Location = new System.Drawing.Point(93, 6);
+            this.btnText2.Location = new System.Drawing.Point(124, 6);
             this.btnText2.Name = "btnText2";
             this.btnText2.Size = new System.Drawing.Size(41, 39);
             this.btnText2.TabIndex = 8;
@@ -421,8 +419,6 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
             this.simpleButton1.Location = new System.Drawing.Point(9, 66);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(56, 51);
@@ -433,8 +429,6 @@
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton2.Appearance.Options.UseFont = true;
             this.simpleButton2.Location = new System.Drawing.Point(9, 9);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(56, 51);
@@ -546,9 +540,9 @@
             // 
             // btnRecovery
             // 
-            this.btnRecovery.Location = new System.Drawing.Point(122, 35);
+            this.btnRecovery.Location = new System.Drawing.Point(128, 35);
             this.btnRecovery.Name = "btnRecovery";
-            this.btnRecovery.Size = new System.Drawing.Size(49, 37);
+            this.btnRecovery.Size = new System.Drawing.Size(58, 37);
             this.btnRecovery.TabIndex = 28;
             this.btnRecovery.Tag = "恢复";
             this.btnRecovery.Text = "恢复";
@@ -556,9 +550,9 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(67, 35);
+            this.btnCancel.Location = new System.Drawing.Point(64, 35);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(49, 37);
+            this.btnCancel.Size = new System.Drawing.Size(58, 37);
             this.btnCancel.TabIndex = 27;
             this.btnCancel.Tag = "撤销";
             this.btnCancel.Text = "撤销";
@@ -599,9 +593,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(752, 20);
+            this.button1.Location = new System.Drawing.Point(576, 24);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(49, 30);
+            this.button1.Size = new System.Drawing.Size(69, 30);
             this.button1.TabIndex = 14;
             this.button1.Tag = "重试";
             this.button1.Text = "重试";
@@ -610,9 +604,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(752, 70);
+            this.button2.Location = new System.Drawing.Point(680, 24);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(49, 30);
+            this.button2.Size = new System.Drawing.Size(69, 30);
             this.button2.TabIndex = 13;
             this.button2.Tag = "关闭";
             this.button2.Text = "关闭";
@@ -624,7 +618,7 @@
             this.chkRotate.AutoSize = true;
             this.chkRotate.Checked = true;
             this.chkRotate.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkRotate.Location = new System.Drawing.Point(371, 52);
+            this.chkRotate.Location = new System.Drawing.Point(176, 60);
             this.chkRotate.Name = "chkRotate";
             this.chkRotate.Size = new System.Drawing.Size(290, 18);
             this.chkRotate.TabIndex = 12;
@@ -634,9 +628,9 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(249, 50);
+            this.btnOK.Location = new System.Drawing.Point(265, 24);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(80, 30);
             this.btnOK.TabIndex = 11;
             this.btnOK.Tag = "应用";
             this.btnOK.Text = "应用";
@@ -656,7 +650,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(150, 31);
+            this.label3.Location = new System.Drawing.Point(146, 36);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(19, 14);
             this.label3.TabIndex = 9;
@@ -665,7 +659,7 @@
             // 
             // txtAngle
             // 
-            this.txtAngle.Location = new System.Drawing.Point(44, 27);
+            this.txtAngle.Location = new System.Drawing.Point(44, 32);
             this.txtAngle.Name = "txtAngle";
             this.txtAngle.Size = new System.Drawing.Size(100, 22);
             this.txtAngle.TabIndex = 8;
@@ -696,9 +690,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(754, 18);
+            this.button3.Location = new System.Drawing.Point(576, 29);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(41, 30);
+            this.button3.Size = new System.Drawing.Size(69, 30);
             this.button3.TabIndex = 34;
             this.button3.Tag = "重试";
             this.button3.Text = "重试";
@@ -707,9 +701,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(754, 68);
+            this.button4.Location = new System.Drawing.Point(680, 29);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(41, 30);
+            this.button4.Size = new System.Drawing.Size(69, 30);
             this.button4.TabIndex = 33;
             this.button4.Tag = "关闭";
             this.button4.Text = "关闭";
@@ -721,7 +715,7 @@
             this.chkCut.AutoSize = true;
             this.chkCut.Checked = true;
             this.chkCut.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkCut.Location = new System.Drawing.Point(376, 50);
+            this.chkCut.Location = new System.Drawing.Point(176, 65);
             this.chkCut.Name = "chkCut";
             this.chkCut.Size = new System.Drawing.Size(290, 18);
             this.chkCut.TabIndex = 32;
@@ -731,9 +725,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(265, 48);
+            this.button5.Location = new System.Drawing.Point(265, 29);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(53, 23);
+            this.button5.Size = new System.Drawing.Size(80, 30);
             this.button5.TabIndex = 31;
             this.button5.Tag = "应用";
             this.button5.Text = "应用";
@@ -781,9 +775,9 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(755, 26);
+            this.button6.Location = new System.Drawing.Point(576, 32);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(41, 30);
+            this.button6.Size = new System.Drawing.Size(69, 30);
             this.button6.TabIndex = 33;
             this.button6.Tag = "重试";
             this.button6.Text = "重试";
@@ -792,9 +786,9 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(755, 76);
+            this.button7.Location = new System.Drawing.Point(680, 32);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(41, 30);
+            this.button7.Size = new System.Drawing.Size(69, 30);
             this.button7.TabIndex = 32;
             this.button7.Tag = "关闭";
             this.button7.Text = "关闭";
@@ -806,7 +800,7 @@
             this.chkChange.AutoSize = true;
             this.chkChange.Checked = true;
             this.chkChange.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkChange.Location = new System.Drawing.Point(433, 60);
+            this.chkChange.Location = new System.Drawing.Point(176, 69);
             this.chkChange.Name = "chkChange";
             this.chkChange.Size = new System.Drawing.Size(290, 18);
             this.chkChange.TabIndex = 31;
@@ -816,9 +810,9 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(438, 31);
+            this.button8.Location = new System.Drawing.Point(265, 35);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(53, 23);
+            this.button8.Size = new System.Drawing.Size(80, 30);
             this.button8.TabIndex = 30;
             this.button8.Tag = "应用";
             this.button8.Text = "应用";
@@ -828,7 +822,7 @@
             // chkC
             // 
             this.chkC.AutoSize = true;
-            this.chkC.Location = new System.Drawing.Point(34, 60);
+            this.chkC.Location = new System.Drawing.Point(149, 11);
             this.chkC.Name = "chkC";
             this.chkC.Size = new System.Drawing.Size(98, 18);
             this.chkC.TabIndex = 29;
@@ -839,7 +833,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(309, 35);
+            this.label7.Location = new System.Drawing.Point(18, 69);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(31, 14);
             this.label7.TabIndex = 28;
@@ -849,7 +843,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(118, 35);
+            this.label8.Location = new System.Drawing.Point(18, 38);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(31, 14);
             this.label8.TabIndex = 27;
@@ -858,9 +852,9 @@
             // 
             // txtChangeH
             // 
-            this.txtChangeH.Location = new System.Drawing.Point(225, 32);
+            this.txtChangeH.Location = new System.Drawing.Point(64, 66);
             this.txtChangeH.Name = "txtChangeH";
-            this.txtChangeH.Size = new System.Drawing.Size(78, 22);
+            this.txtChangeH.Size = new System.Drawing.Size(69, 22);
             this.txtChangeH.TabIndex = 26;
             this.txtChangeH.Enter += new System.EventHandler(this.textBox1_Enter);
             // 
@@ -876,9 +870,9 @@
             // 
             // txtChangeW
             // 
-            this.txtChangeW.Location = new System.Drawing.Point(34, 32);
+            this.txtChangeW.Location = new System.Drawing.Point(64, 35);
             this.txtChangeW.Name = "txtChangeW";
-            this.txtChangeW.Size = new System.Drawing.Size(78, 22);
+            this.txtChangeW.Size = new System.Drawing.Size(69, 22);
             this.txtChangeW.TabIndex = 24;
             this.txtChangeW.Enter += new System.EventHandler(this.txtAngle_Enter);
             // 
@@ -939,19 +933,19 @@
 
         #endregion
 
-        private DevExpress.XtraEditors.SimpleButton btnRotate180;
-        private DevExpress.XtraEditors.SimpleButton btnRotate90;
-        private DevExpress.XtraEditors.SimpleButton btnShowRemark;
-        private DevExpress.XtraEditors.SimpleButton btnRotate;
-        private DevExpress.XtraEditors.SimpleButton btnChangeSize;
-        private DevExpress.XtraEditors.SimpleButton btnCutImg;
-        private DevExpress.XtraEditors.SimpleButton btnMirror;
-        private DevExpress.XtraEditors.SimpleButton btnEditRemark;
+        private System.Windows.Forms.Button btnRotate180;
+        private System.Windows.Forms.Button btnRotate90;
+        private System.Windows.Forms.Button btnShowRemark;
+        private System.Windows.Forms.Button btnRotate;
+        private System.Windows.Forms.Button btnChangeSize;
+        private System.Windows.Forms.Button btnCutImg;
+        private System.Windows.Forms.Button btnMirror;
+        private System.Windows.Forms.Button btnEditRemark;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pEditRemark;
-        private DevExpress.XtraEditors.SimpleButton btnRecovery;
-        private DevExpress.XtraEditors.SimpleButton btnCancel;
-        private DevExpress.XtraEditors.SimpleButton btnChoice;
+        private System.Windows.Forms.Button btnRecovery;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnChoice;
         private System.Windows.Forms.Button btnColor;
         private System.Windows.Forms.ComboBox ddlPenSize;
         private System.Windows.Forms.Panel panel4;
@@ -960,10 +954,10 @@
         private System.Windows.Forms.ComboBox ddlRectangle;
         private System.Windows.Forms.ComboBox ddlEllipse;
         private System.Windows.Forms.ComboBox ddlLine;
-        private DevExpress.XtraEditors.SimpleButton btnDel;
+        private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Panel panel2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private System.Windows.Forms.Button simpleButton1;
+        private System.Windows.Forms.Button simpleButton2;
         private System.Windows.Forms.Panel pRotate;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

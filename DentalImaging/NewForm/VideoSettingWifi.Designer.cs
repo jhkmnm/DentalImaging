@@ -197,7 +197,7 @@
             this.tabControl1.Location = new System.Drawing.Point(2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(474, 619);
+            this.tabControl1.Size = new System.Drawing.Size(492, 619);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -244,7 +244,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(466, 593);
+            this.tabPage1.Size = new System.Drawing.Size(484, 593);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Tag = "微距模式";
             this.tabPage1.Text = "微距模式";
@@ -252,7 +252,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(341, 461);
+            this.button1.Location = new System.Drawing.Point(304, 466);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 113;
@@ -266,7 +266,7 @@
             this.chkDuijiaoA.AutoSize = true;
             this.chkDuijiaoA.Checked = true;
             this.chkDuijiaoA.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkDuijiaoA.Location = new System.Drawing.Point(422, 555);
+            this.chkDuijiaoA.Location = new System.Drawing.Point(407, 573);
             this.chkDuijiaoA.Name = "chkDuijiaoA";
             this.chkDuijiaoA.Size = new System.Drawing.Size(48, 16);
             this.chkDuijiaoA.TabIndex = 112;
@@ -280,7 +280,7 @@
             this.chkBaipinghengA.AutoSize = true;
             this.chkBaipinghengA.Checked = true;
             this.chkBaipinghengA.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkBaipinghengA.Location = new System.Drawing.Point(422, 322);
+            this.chkBaipinghengA.Location = new System.Drawing.Point(407, 342);
             this.chkBaipinghengA.Name = "chkBaipinghengA";
             this.chkBaipinghengA.Size = new System.Drawing.Size(48, 16);
             this.chkBaipinghengA.TabIndex = 111;
@@ -294,7 +294,7 @@
             this.chkBaoguangA.AutoSize = true;
             this.chkBaoguangA.Checked = true;
             this.chkBaoguangA.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkBaoguangA.Location = new System.Drawing.Point(422, 427);
+            this.chkBaoguangA.Location = new System.Drawing.Point(407, 452);
             this.chkBaoguangA.Name = "chkBaoguangA";
             this.chkBaoguangA.Size = new System.Drawing.Size(48, 16);
             this.chkBaoguangA.TabIndex = 110;
@@ -311,14 +311,14 @@
             "640x480",
             "1280x720",
             "1920x1080"});
-            this.ddlFenbianlvA.Location = new System.Drawing.Point(67, 466);
+            this.ddlFenbianlvA.Location = new System.Drawing.Point(78, 466);
             this.ddlFenbianlvA.Name = "ddlFenbianlvA";
             this.ddlFenbianlvA.Size = new System.Drawing.Size(162, 20);
             this.ddlFenbianlvA.TabIndex = 109;
             // 
             // tbDuijiaoA
             // 
-            this.tbDuijiaoA.Location = new System.Drawing.Point(67, 543);
+            this.tbDuijiaoA.Location = new System.Drawing.Point(78, 543);
             this.tbDuijiaoA.Maximum = 206;
             this.tbDuijiaoA.Minimum = 130;
             this.tbDuijiaoA.Name = "tbDuijiaoA";
@@ -330,9 +330,9 @@
             // 
             // txtDuijiaoA
             // 
-            this.txtDuijiaoA.Location = new System.Drawing.Point(374, 553);
+            this.txtDuijiaoA.Location = new System.Drawing.Point(407, 547);
             this.txtDuijiaoA.Name = "txtDuijiaoA";
-            this.txtDuijiaoA.Size = new System.Drawing.Size(42, 21);
+            this.txtDuijiaoA.Size = new System.Drawing.Size(48, 21);
             this.txtDuijiaoA.TabIndex = 105;
             this.txtDuijiaoA.Tag = this.tbDuijiaoA;
             this.txtDuijiaoA.Text = "190";
@@ -341,7 +341,7 @@
             // 
             // tbGonglvA
             // 
-            this.tbGonglvA.Location = new System.Drawing.Point(67, 492);
+            this.tbGonglvA.Location = new System.Drawing.Point(78, 492);
             this.tbGonglvA.Maximum = 100;
             this.tbGonglvA.Name = "tbGonglvA";
             this.tbGonglvA.Size = new System.Drawing.Size(315, 45);
@@ -351,9 +351,9 @@
             // 
             // txtGonglvA
             // 
-            this.txtGonglvA.Location = new System.Drawing.Point(387, 500);
+            this.txtGonglvA.Location = new System.Drawing.Point(407, 502);
             this.txtGonglvA.Name = "txtGonglvA";
-            this.txtGonglvA.Size = new System.Drawing.Size(64, 21);
+            this.txtGonglvA.Size = new System.Drawing.Size(48, 21);
             this.txtGonglvA.TabIndex = 103;
             this.txtGonglvA.Tag = this.tbGonglvA;
             this.txtGonglvA.TextChanged += new System.EventHandler(this.txt_TextChanged);
@@ -362,7 +362,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(16, 553);
+            this.label31.Location = new System.Drawing.Point(6, 556);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(29, 12);
             this.label31.TabIndex = 104;
@@ -371,27 +371,27 @@
             // 
             // label32
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(16, 502);
+            this.label32.Location = new System.Drawing.Point(6, 502);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(53, 12);
+            this.label32.Size = new System.Drawing.Size(53, 24);
             this.label32.TabIndex = 102;
             this.label32.Tag = "发射功率";
             this.label32.Text = "发射功率";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label33
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(16, 466);
+            this.label33.Location = new System.Drawing.Point(6, 466);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(41, 12);
+            this.label33.Size = new System.Drawing.Size(65, 24);
             this.label33.TabIndex = 100;
             this.label33.Tag = "分辨率";
             this.label33.Text = "分辨率";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tbBaoguangA
             // 
-            this.tbBaoguangA.Location = new System.Drawing.Point(67, 415);
+            this.tbBaoguangA.Location = new System.Drawing.Point(78, 415);
             this.tbBaoguangA.Maximum = 0;
             this.tbBaoguangA.Minimum = -13;
             this.tbBaoguangA.Name = "tbBaoguangA";
@@ -403,9 +403,9 @@
             // 
             // txtBaoguangA
             // 
-            this.txtBaoguangA.Location = new System.Drawing.Point(374, 425);
+            this.txtBaoguangA.Location = new System.Drawing.Point(407, 425);
             this.txtBaoguangA.Name = "txtBaoguangA";
-            this.txtBaoguangA.Size = new System.Drawing.Size(42, 21);
+            this.txtBaoguangA.Size = new System.Drawing.Size(48, 21);
             this.txtBaoguangA.TabIndex = 89;
             this.txtBaoguangA.Tag = this.tbBaoguangA;
             this.txtBaoguangA.Text = "-6";
@@ -414,7 +414,7 @@
             // 
             // tbZengyiA
             // 
-            this.tbZengyiA.Location = new System.Drawing.Point(67, 364);
+            this.tbZengyiA.Location = new System.Drawing.Point(78, 364);
             this.tbZengyiA.Maximum = 240;
             this.tbZengyiA.Minimum = 1;
             this.tbZengyiA.Name = "tbZengyiA";
@@ -425,7 +425,7 @@
             // 
             // tbBaipinghengA
             // 
-            this.tbBaipinghengA.Location = new System.Drawing.Point(67, 313);
+            this.tbBaipinghengA.Location = new System.Drawing.Point(78, 313);
             this.tbBaipinghengA.Maximum = 6500;
             this.tbBaipinghengA.Minimum = 2806;
             this.tbBaipinghengA.Name = "tbBaipinghengA";
@@ -437,9 +437,9 @@
             // 
             // txtBaipinghengA
             // 
-            this.txtBaipinghengA.Location = new System.Drawing.Point(374, 320);
+            this.txtBaipinghengA.Location = new System.Drawing.Point(407, 320);
             this.txtBaipinghengA.Name = "txtBaipinghengA";
-            this.txtBaipinghengA.Size = new System.Drawing.Size(42, 21);
+            this.txtBaipinghengA.Size = new System.Drawing.Size(48, 21);
             this.txtBaipinghengA.TabIndex = 83;
             this.txtBaipinghengA.Tag = this.tbBaipinghengA;
             this.txtBaipinghengA.Text = "4600";
@@ -448,7 +448,7 @@
             // 
             // tbGamaA
             // 
-            this.tbGamaA.Location = new System.Drawing.Point(67, 262);
+            this.tbGamaA.Location = new System.Drawing.Point(78, 262);
             this.tbGamaA.Maximum = 176;
             this.tbGamaA.Minimum = 80;
             this.tbGamaA.Name = "tbGamaA";
@@ -460,9 +460,9 @@
             // 
             // txtGamaA
             // 
-            this.txtGamaA.Location = new System.Drawing.Point(387, 270);
+            this.txtGamaA.Location = new System.Drawing.Point(407, 270);
             this.txtGamaA.Name = "txtGamaA";
-            this.txtGamaA.Size = new System.Drawing.Size(64, 21);
+            this.txtGamaA.Size = new System.Drawing.Size(48, 21);
             this.txtGamaA.TabIndex = 81;
             this.txtGamaA.Tag = this.tbGamaA;
             this.txtGamaA.Text = "100";
@@ -471,7 +471,7 @@
             // 
             // tbQinxiduA
             // 
-            this.tbQinxiduA.Location = new System.Drawing.Point(67, 211);
+            this.tbQinxiduA.Location = new System.Drawing.Point(78, 211);
             this.tbQinxiduA.Maximum = 100;
             this.tbQinxiduA.Name = "tbQinxiduA";
             this.tbQinxiduA.Size = new System.Drawing.Size(315, 45);
@@ -481,9 +481,9 @@
             // 
             // txtQinxiduA
             // 
-            this.txtQinxiduA.Location = new System.Drawing.Point(387, 219);
+            this.txtQinxiduA.Location = new System.Drawing.Point(407, 219);
             this.txtQinxiduA.Name = "txtQinxiduA";
-            this.txtQinxiduA.Size = new System.Drawing.Size(64, 21);
+            this.txtQinxiduA.Size = new System.Drawing.Size(48, 21);
             this.txtQinxiduA.TabIndex = 79;
             this.txtQinxiduA.Tag = this.tbQinxiduA;
             this.txtQinxiduA.Text = "0";
@@ -492,7 +492,7 @@
             // 
             // tbBaoheduA
             // 
-            this.tbBaoheduA.Location = new System.Drawing.Point(67, 160);
+            this.tbBaoheduA.Location = new System.Drawing.Point(78, 160);
             this.tbBaoheduA.Maximum = 100;
             this.tbBaoheduA.Name = "tbBaoheduA";
             this.tbBaoheduA.Size = new System.Drawing.Size(315, 45);
@@ -503,9 +503,9 @@
             // 
             // txtBaoheduA
             // 
-            this.txtBaoheduA.Location = new System.Drawing.Point(387, 168);
+            this.txtBaoheduA.Location = new System.Drawing.Point(407, 168);
             this.txtBaoheduA.Name = "txtBaoheduA";
-            this.txtBaoheduA.Size = new System.Drawing.Size(64, 21);
+            this.txtBaoheduA.Size = new System.Drawing.Size(48, 21);
             this.txtBaoheduA.TabIndex = 77;
             this.txtBaoheduA.Tag = this.tbBaoheduA;
             this.txtBaoheduA.Text = "48";
@@ -515,7 +515,7 @@
             // tbSediaoA
             // 
             this.tbSediaoA.Enabled = false;
-            this.tbSediaoA.Location = new System.Drawing.Point(67, 109);
+            this.tbSediaoA.Location = new System.Drawing.Point(78, 109);
             this.tbSediaoA.Maximum = 2000;
             this.tbSediaoA.Minimum = -2000;
             this.tbSediaoA.Name = "tbSediaoA";
@@ -527,10 +527,10 @@
             // txtSediaoA
             // 
             this.txtSediaoA.Enabled = false;
-            this.txtSediaoA.Location = new System.Drawing.Point(387, 117);
+            this.txtSediaoA.Location = new System.Drawing.Point(407, 117);
             this.txtSediaoA.Name = "txtSediaoA";
             this.txtSediaoA.ReadOnly = true;
-            this.txtSediaoA.Size = new System.Drawing.Size(64, 21);
+            this.txtSediaoA.Size = new System.Drawing.Size(48, 21);
             this.txtSediaoA.TabIndex = 75;
             this.txtSediaoA.Tag = this.tbSediaoA;
             this.txtSediaoA.Text = "0";
@@ -539,7 +539,7 @@
             // 
             // tbDuibiduA
             // 
-            this.tbDuibiduA.Location = new System.Drawing.Point(67, 58);
+            this.tbDuibiduA.Location = new System.Drawing.Point(78, 58);
             this.tbDuibiduA.Maximum = 95;
             this.tbDuibiduA.Name = "tbDuibiduA";
             this.tbDuibiduA.Size = new System.Drawing.Size(315, 45);
@@ -550,9 +550,9 @@
             // 
             // txtDuibiduA
             // 
-            this.txtDuibiduA.Location = new System.Drawing.Point(387, 66);
+            this.txtDuibiduA.Location = new System.Drawing.Point(407, 66);
             this.txtDuibiduA.Name = "txtDuibiduA";
-            this.txtDuibiduA.Size = new System.Drawing.Size(64, 21);
+            this.txtDuibiduA.Size = new System.Drawing.Size(48, 21);
             this.txtDuibiduA.TabIndex = 73;
             this.txtDuibiduA.Tag = this.tbDuibiduA;
             this.txtDuibiduA.Text = "2";
@@ -561,7 +561,7 @@
             // 
             // tbLiangduA
             // 
-            this.tbLiangduA.Location = new System.Drawing.Point(67, 7);
+            this.tbLiangduA.Location = new System.Drawing.Point(78, 7);
             this.tbLiangduA.Maximum = 127;
             this.tbLiangduA.Name = "tbLiangduA";
             this.tbLiangduA.Size = new System.Drawing.Size(315, 45);
@@ -571,9 +571,9 @@
             // 
             // txtLiangduA
             // 
-            this.txtLiangduA.Location = new System.Drawing.Point(387, 15);
+            this.txtLiangduA.Location = new System.Drawing.Point(407, 15);
             this.txtLiangduA.Name = "txtLiangduA";
-            this.txtLiangduA.Size = new System.Drawing.Size(64, 21);
+            this.txtLiangduA.Size = new System.Drawing.Size(48, 21);
             this.txtLiangduA.TabIndex = 71;
             this.txtLiangduA.Tag = this.tbLiangduA;
             this.txtLiangduA.Text = "0";
@@ -583,7 +583,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(16, 425);
+            this.label9.Location = new System.Drawing.Point(6, 425);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(29, 12);
             this.label9.TabIndex = 88;
@@ -592,9 +592,9 @@
             // 
             // txtZengyiA
             // 
-            this.txtZengyiA.Location = new System.Drawing.Point(387, 372);
+            this.txtZengyiA.Location = new System.Drawing.Point(407, 372);
             this.txtZengyiA.Name = "txtZengyiA";
-            this.txtZengyiA.Size = new System.Drawing.Size(64, 21);
+            this.txtZengyiA.Size = new System.Drawing.Size(48, 21);
             this.txtZengyiA.TabIndex = 87;
             this.txtZengyiA.Text = "32";
             this.txtZengyiA.TextChanged += new System.EventHandler(this.txt_TextChanged);
@@ -603,7 +603,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(16, 374);
+            this.label10.Location = new System.Drawing.Point(6, 374);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(29, 12);
             this.label10.TabIndex = 86;
@@ -612,18 +612,18 @@
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(16, 323);
+            this.label6.Location = new System.Drawing.Point(6, 323);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 12);
+            this.label6.Size = new System.Drawing.Size(65, 24);
             this.label6.TabIndex = 82;
             this.label6.Tag = "白平衡";
             this.label6.Text = "白平衡";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(16, 272);
+            this.label7.Location = new System.Drawing.Point(6, 272);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(29, 12);
             this.label7.TabIndex = 80;
@@ -633,7 +633,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(16, 221);
+            this.label8.Location = new System.Drawing.Point(6, 222);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(41, 12);
             this.label8.TabIndex = 78;
@@ -643,7 +643,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 170);
+            this.label3.Location = new System.Drawing.Point(6, 171);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 12);
             this.label3.TabIndex = 76;
@@ -653,7 +653,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 119);
+            this.label4.Location = new System.Drawing.Point(6, 120);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 12);
             this.label4.TabIndex = 74;
@@ -662,18 +662,18 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 68);
+            this.label2.Location = new System.Drawing.Point(6, 66);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 12);
+            this.label2.Size = new System.Drawing.Size(65, 24);
             this.label2.TabIndex = 72;
             this.label2.Tag = "对比度";
             this.label2.Text = "对比度";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 17);
+            this.label1.Location = new System.Drawing.Point(6, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 70;
@@ -724,7 +724,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(466, 593);
+            this.tabPage2.Size = new System.Drawing.Size(484, 593);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Tag = "一般模式";
             this.tabPage2.Text = "一般模式";
@@ -732,7 +732,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(341, 461);
+            this.button2.Location = new System.Drawing.Point(271, 463);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 123;
@@ -746,7 +746,7 @@
             this.chkBaoguangB.AutoSize = true;
             this.chkBaoguangB.Checked = true;
             this.chkBaoguangB.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkBaoguangB.Location = new System.Drawing.Point(423, 427);
+            this.chkBaoguangB.Location = new System.Drawing.Point(407, 452);
             this.chkBaoguangB.Name = "chkBaoguangB";
             this.chkBaoguangB.Size = new System.Drawing.Size(48, 16);
             this.chkBaoguangB.TabIndex = 122;
@@ -760,7 +760,7 @@
             this.chkDuijiaoB.AutoSize = true;
             this.chkDuijiaoB.Checked = true;
             this.chkDuijiaoB.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkDuijiaoB.Location = new System.Drawing.Point(423, 555);
+            this.chkDuijiaoB.Location = new System.Drawing.Point(407, 573);
             this.chkDuijiaoB.Name = "chkDuijiaoB";
             this.chkDuijiaoB.Size = new System.Drawing.Size(48, 16);
             this.chkDuijiaoB.TabIndex = 121;
@@ -777,14 +777,14 @@
             "640x480",
             "1280x720",
             "1920x1080"});
-            this.ddlFenbianlvB.Location = new System.Drawing.Point(67, 466);
+            this.ddlFenbianlvB.Location = new System.Drawing.Point(78, 466);
             this.ddlFenbianlvB.Name = "ddlFenbianlvB";
             this.ddlFenbianlvB.Size = new System.Drawing.Size(162, 20);
             this.ddlFenbianlvB.TabIndex = 120;
             // 
             // tbDuijiaoB
             // 
-            this.tbDuijiaoB.Location = new System.Drawing.Point(68, 543);
+            this.tbDuijiaoB.Location = new System.Drawing.Point(78, 543);
             this.tbDuijiaoB.Maximum = 206;
             this.tbDuijiaoB.Minimum = 130;
             this.tbDuijiaoB.Name = "tbDuijiaoB";
@@ -796,9 +796,9 @@
             // 
             // txtDuijiaoB
             // 
-            this.txtDuijiaoB.Location = new System.Drawing.Point(375, 553);
+            this.txtDuijiaoB.Location = new System.Drawing.Point(407, 547);
             this.txtDuijiaoB.Name = "txtDuijiaoB";
-            this.txtDuijiaoB.Size = new System.Drawing.Size(42, 21);
+            this.txtDuijiaoB.Size = new System.Drawing.Size(48, 21);
             this.txtDuijiaoB.TabIndex = 117;
             this.txtDuijiaoB.Tag = this.tbDuijiaoB;
             this.txtDuijiaoB.Text = "190";
@@ -807,7 +807,7 @@
             // 
             // tbGonglvB
             // 
-            this.tbGonglvB.Location = new System.Drawing.Point(67, 492);
+            this.tbGonglvB.Location = new System.Drawing.Point(78, 492);
             this.tbGonglvB.Maximum = 100;
             this.tbGonglvB.Name = "tbGonglvB";
             this.tbGonglvB.Size = new System.Drawing.Size(315, 45);
@@ -817,9 +817,9 @@
             // 
             // txtGonglvB
             // 
-            this.txtGonglvB.Location = new System.Drawing.Point(388, 500);
+            this.txtGonglvB.Location = new System.Drawing.Point(407, 502);
             this.txtGonglvB.Name = "txtGonglvB";
-            this.txtGonglvB.Size = new System.Drawing.Size(64, 21);
+            this.txtGonglvB.Size = new System.Drawing.Size(48, 21);
             this.txtGonglvB.TabIndex = 115;
             this.txtGonglvB.Tag = this.tbGonglvB;
             this.txtGonglvB.TextChanged += new System.EventHandler(this.txt_TextChanged);
@@ -828,7 +828,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 568);
+            this.label5.Location = new System.Drawing.Point(6, 556);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(29, 12);
             this.label5.TabIndex = 116;
@@ -837,30 +837,30 @@
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(16, 502);
+            this.label13.Location = new System.Drawing.Point(6, 502);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(53, 12);
+            this.label13.Size = new System.Drawing.Size(53, 24);
             this.label13.TabIndex = 114;
             this.label13.Tag = "发射功率";
             this.label13.Text = "发射功率";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label34
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(16, 466);
+            this.label34.Location = new System.Drawing.Point(6, 466);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(41, 12);
+            this.label34.Size = new System.Drawing.Size(65, 24);
             this.label34.TabIndex = 113;
             this.label34.Tag = "分辨率";
             this.label34.Text = "分辨率";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // chkBaipinghengB
             // 
             this.chkBaipinghengB.AutoSize = true;
             this.chkBaipinghengB.Checked = true;
             this.chkBaipinghengB.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkBaipinghengB.Location = new System.Drawing.Point(422, 323);
+            this.chkBaipinghengB.Location = new System.Drawing.Point(407, 342);
             this.chkBaipinghengB.Name = "chkBaipinghengB";
             this.chkBaipinghengB.Size = new System.Drawing.Size(48, 16);
             this.chkBaipinghengB.TabIndex = 112;
@@ -871,7 +871,7 @@
             // 
             // tbBaoguangB
             // 
-            this.tbBaoguangB.Location = new System.Drawing.Point(67, 415);
+            this.tbBaoguangB.Location = new System.Drawing.Point(78, 415);
             this.tbBaoguangB.Maximum = 0;
             this.tbBaoguangB.Minimum = -13;
             this.tbBaoguangB.Name = "tbBaoguangB";
@@ -883,9 +883,9 @@
             // 
             // txtBaoguangB
             // 
-            this.txtBaoguangB.Location = new System.Drawing.Point(374, 425);
+            this.txtBaoguangB.Location = new System.Drawing.Point(407, 425);
             this.txtBaoguangB.Name = "txtBaoguangB";
-            this.txtBaoguangB.Size = new System.Drawing.Size(42, 21);
+            this.txtBaoguangB.Size = new System.Drawing.Size(48, 21);
             this.txtBaoguangB.TabIndex = 89;
             this.txtBaoguangB.Tag = this.tbBaoguangB;
             this.txtBaoguangB.Text = "-6";
@@ -894,7 +894,7 @@
             // 
             // tbZengyiB
             // 
-            this.tbZengyiB.Location = new System.Drawing.Point(67, 364);
+            this.tbZengyiB.Location = new System.Drawing.Point(78, 364);
             this.tbZengyiB.Maximum = 240;
             this.tbZengyiB.Minimum = 1;
             this.tbZengyiB.Name = "tbZengyiB";
@@ -905,7 +905,7 @@
             // 
             // tbBaipinghengB
             // 
-            this.tbBaipinghengB.Location = new System.Drawing.Point(67, 313);
+            this.tbBaipinghengB.Location = new System.Drawing.Point(78, 313);
             this.tbBaipinghengB.Maximum = 6500;
             this.tbBaipinghengB.Minimum = 2806;
             this.tbBaipinghengB.Name = "tbBaipinghengB";
@@ -917,9 +917,9 @@
             // 
             // txtBaipinghengB
             // 
-            this.txtBaipinghengB.Location = new System.Drawing.Point(374, 320);
+            this.txtBaipinghengB.Location = new System.Drawing.Point(407, 320);
             this.txtBaipinghengB.Name = "txtBaipinghengB";
-            this.txtBaipinghengB.Size = new System.Drawing.Size(42, 21);
+            this.txtBaipinghengB.Size = new System.Drawing.Size(48, 21);
             this.txtBaipinghengB.TabIndex = 83;
             this.txtBaipinghengB.Tag = this.tbBaipinghengB;
             this.txtBaipinghengB.Text = "4600";
@@ -928,7 +928,7 @@
             // 
             // tbGamaB
             // 
-            this.tbGamaB.Location = new System.Drawing.Point(67, 262);
+            this.tbGamaB.Location = new System.Drawing.Point(78, 262);
             this.tbGamaB.Maximum = 176;
             this.tbGamaB.Minimum = 80;
             this.tbGamaB.Name = "tbGamaB";
@@ -940,9 +940,9 @@
             // 
             // txtGamaB
             // 
-            this.txtGamaB.Location = new System.Drawing.Point(387, 270);
+            this.txtGamaB.Location = new System.Drawing.Point(407, 270);
             this.txtGamaB.Name = "txtGamaB";
-            this.txtGamaB.Size = new System.Drawing.Size(64, 21);
+            this.txtGamaB.Size = new System.Drawing.Size(48, 21);
             this.txtGamaB.TabIndex = 81;
             this.txtGamaB.Tag = this.tbGamaB;
             this.txtGamaB.Text = "100";
@@ -951,7 +951,7 @@
             // 
             // tbQinxiduB
             // 
-            this.tbQinxiduB.Location = new System.Drawing.Point(67, 211);
+            this.tbQinxiduB.Location = new System.Drawing.Point(78, 211);
             this.tbQinxiduB.Maximum = 100;
             this.tbQinxiduB.Name = "tbQinxiduB";
             this.tbQinxiduB.Size = new System.Drawing.Size(315, 45);
@@ -961,9 +961,9 @@
             // 
             // txtQinxiduB
             // 
-            this.txtQinxiduB.Location = new System.Drawing.Point(387, 219);
+            this.txtQinxiduB.Location = new System.Drawing.Point(407, 219);
             this.txtQinxiduB.Name = "txtQinxiduB";
-            this.txtQinxiduB.Size = new System.Drawing.Size(64, 21);
+            this.txtQinxiduB.Size = new System.Drawing.Size(48, 21);
             this.txtQinxiduB.TabIndex = 79;
             this.txtQinxiduB.Tag = this.tbQinxiduB;
             this.txtQinxiduB.Text = "0";
@@ -972,7 +972,7 @@
             // 
             // tbBaoheduB
             // 
-            this.tbBaoheduB.Location = new System.Drawing.Point(67, 160);
+            this.tbBaoheduB.Location = new System.Drawing.Point(78, 160);
             this.tbBaoheduB.Maximum = 100;
             this.tbBaoheduB.Name = "tbBaoheduB";
             this.tbBaoheduB.Size = new System.Drawing.Size(315, 45);
@@ -983,9 +983,9 @@
             // 
             // txtBaoheduB
             // 
-            this.txtBaoheduB.Location = new System.Drawing.Point(387, 168);
+            this.txtBaoheduB.Location = new System.Drawing.Point(407, 168);
             this.txtBaoheduB.Name = "txtBaoheduB";
-            this.txtBaoheduB.Size = new System.Drawing.Size(64, 21);
+            this.txtBaoheduB.Size = new System.Drawing.Size(48, 21);
             this.txtBaoheduB.TabIndex = 77;
             this.txtBaoheduB.Tag = this.tbBaoheduB;
             this.txtBaoheduB.Text = "48";
@@ -994,7 +994,7 @@
             // 
             // tbSediaoB
             // 
-            this.tbSediaoB.Location = new System.Drawing.Point(67, 109);
+            this.tbSediaoB.Location = new System.Drawing.Point(78, 109);
             this.tbSediaoB.Maximum = 2000;
             this.tbSediaoB.Minimum = -2000;
             this.tbSediaoB.Name = "tbSediaoB";
@@ -1005,9 +1005,9 @@
             // 
             // txtSediaoB
             // 
-            this.txtSediaoB.Location = new System.Drawing.Point(387, 117);
+            this.txtSediaoB.Location = new System.Drawing.Point(407, 117);
             this.txtSediaoB.Name = "txtSediaoB";
-            this.txtSediaoB.Size = new System.Drawing.Size(64, 21);
+            this.txtSediaoB.Size = new System.Drawing.Size(48, 21);
             this.txtSediaoB.TabIndex = 75;
             this.txtSediaoB.Tag = this.tbSediaoB;
             this.txtSediaoB.Text = "0";
@@ -1016,7 +1016,7 @@
             // 
             // tbDuibiduB
             // 
-            this.tbDuibiduB.Location = new System.Drawing.Point(67, 58);
+            this.tbDuibiduB.Location = new System.Drawing.Point(78, 58);
             this.tbDuibiduB.Maximum = 95;
             this.tbDuibiduB.Name = "tbDuibiduB";
             this.tbDuibiduB.Size = new System.Drawing.Size(315, 45);
@@ -1027,9 +1027,9 @@
             // 
             // txtDuibiduB
             // 
-            this.txtDuibiduB.Location = new System.Drawing.Point(387, 66);
+            this.txtDuibiduB.Location = new System.Drawing.Point(407, 66);
             this.txtDuibiduB.Name = "txtDuibiduB";
-            this.txtDuibiduB.Size = new System.Drawing.Size(64, 21);
+            this.txtDuibiduB.Size = new System.Drawing.Size(48, 21);
             this.txtDuibiduB.TabIndex = 73;
             this.txtDuibiduB.Tag = this.tbDuibiduB;
             this.txtDuibiduB.Text = "2";
@@ -1038,7 +1038,7 @@
             // 
             // tbLiangduB
             // 
-            this.tbLiangduB.Location = new System.Drawing.Point(67, 7);
+            this.tbLiangduB.Location = new System.Drawing.Point(78, 7);
             this.tbLiangduB.Maximum = 127;
             this.tbLiangduB.Name = "tbLiangduB";
             this.tbLiangduB.Size = new System.Drawing.Size(315, 45);
@@ -1048,9 +1048,9 @@
             // 
             // txtLiangduB
             // 
-            this.txtLiangduB.Location = new System.Drawing.Point(387, 15);
+            this.txtLiangduB.Location = new System.Drawing.Point(407, 15);
             this.txtLiangduB.Name = "txtLiangduB";
-            this.txtLiangduB.Size = new System.Drawing.Size(64, 21);
+            this.txtLiangduB.Size = new System.Drawing.Size(48, 21);
             this.txtLiangduB.TabIndex = 71;
             this.txtLiangduB.Tag = this.tbLiangduB;
             this.txtLiangduB.Text = "0";
@@ -1060,7 +1060,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(16, 425);
+            this.label11.Location = new System.Drawing.Point(6, 425);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(29, 12);
             this.label11.TabIndex = 88;
@@ -1069,9 +1069,9 @@
             // 
             // txtZengyiB
             // 
-            this.txtZengyiB.Location = new System.Drawing.Point(387, 372);
+            this.txtZengyiB.Location = new System.Drawing.Point(407, 372);
             this.txtZengyiB.Name = "txtZengyiB";
-            this.txtZengyiB.Size = new System.Drawing.Size(64, 21);
+            this.txtZengyiB.Size = new System.Drawing.Size(48, 21);
             this.txtZengyiB.TabIndex = 87;
             this.txtZengyiB.Text = "1";
             this.txtZengyiB.TextChanged += new System.EventHandler(this.txt_TextChanged);
@@ -1080,7 +1080,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(16, 374);
+            this.label12.Location = new System.Drawing.Point(6, 374);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(29, 12);
             this.label12.TabIndex = 86;
@@ -1089,18 +1089,18 @@
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(16, 323);
+            this.label14.Location = new System.Drawing.Point(6, 323);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(41, 12);
+            this.label14.Size = new System.Drawing.Size(65, 24);
             this.label14.TabIndex = 82;
             this.label14.Tag = "白平衡";
             this.label14.Text = "白平衡";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(16, 272);
+            this.label15.Location = new System.Drawing.Point(6, 272);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(29, 12);
             this.label15.TabIndex = 80;
@@ -1110,7 +1110,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(16, 221);
+            this.label16.Location = new System.Drawing.Point(6, 222);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(41, 12);
             this.label16.TabIndex = 78;
@@ -1120,7 +1120,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(16, 170);
+            this.label17.Location = new System.Drawing.Point(6, 171);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(41, 12);
             this.label17.TabIndex = 76;
@@ -1130,7 +1130,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(16, 119);
+            this.label18.Location = new System.Drawing.Point(6, 120);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(29, 12);
             this.label18.TabIndex = 74;
@@ -1139,18 +1139,18 @@
             // 
             // label19
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(16, 68);
+            this.label19.Location = new System.Drawing.Point(6, 66);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(41, 12);
+            this.label19.Size = new System.Drawing.Size(65, 24);
             this.label19.TabIndex = 72;
             this.label19.Tag = "对比度";
             this.label19.Text = "对比度";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(16, 17);
+            this.label20.Location = new System.Drawing.Point(6, 18);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(29, 12);
             this.label20.TabIndex = 70;
@@ -1200,7 +1200,7 @@
             this.tabPage3.Controls.Add(this.label30);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(466, 593);
+            this.tabPage3.Size = new System.Drawing.Size(484, 593);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Tag = "人像模式";
             this.tabPage3.Text = "人像模式";
@@ -1208,7 +1208,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(341, 461);
+            this.button3.Location = new System.Drawing.Point(283, 466);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 124;
@@ -1222,7 +1222,7 @@
             this.chkBaoguangC.AutoSize = true;
             this.chkBaoguangC.Checked = true;
             this.chkBaoguangC.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkBaoguangC.Location = new System.Drawing.Point(422, 424);
+            this.chkBaoguangC.Location = new System.Drawing.Point(407, 452);
             this.chkBaoguangC.Name = "chkBaoguangC";
             this.chkBaoguangC.Size = new System.Drawing.Size(48, 16);
             this.chkBaoguangC.TabIndex = 123;
@@ -1236,7 +1236,7 @@
             this.chkDuijiaoC.AutoSize = true;
             this.chkDuijiaoC.Checked = true;
             this.chkDuijiaoC.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkDuijiaoC.Location = new System.Drawing.Point(422, 555);
+            this.chkDuijiaoC.Location = new System.Drawing.Point(407, 573);
             this.chkDuijiaoC.Name = "chkDuijiaoC";
             this.chkDuijiaoC.Size = new System.Drawing.Size(48, 16);
             this.chkDuijiaoC.TabIndex = 122;
@@ -1253,14 +1253,14 @@
             "640x480",
             "1280x720",
             "1920x1080"});
-            this.ddlFenbianlvC.Location = new System.Drawing.Point(67, 466);
+            this.ddlFenbianlvC.Location = new System.Drawing.Point(78, 466);
             this.ddlFenbianlvC.Name = "ddlFenbianlvC";
             this.ddlFenbianlvC.Size = new System.Drawing.Size(162, 20);
             this.ddlFenbianlvC.TabIndex = 121;
             // 
             // tbDuijiaoC
             // 
-            this.tbDuijiaoC.Location = new System.Drawing.Point(67, 543);
+            this.tbDuijiaoC.Location = new System.Drawing.Point(78, 543);
             this.tbDuijiaoC.Maximum = 206;
             this.tbDuijiaoC.Minimum = 130;
             this.tbDuijiaoC.Name = "tbDuijiaoC";
@@ -1272,9 +1272,9 @@
             // 
             // txtDuijiaoC
             // 
-            this.txtDuijiaoC.Location = new System.Drawing.Point(374, 553);
+            this.txtDuijiaoC.Location = new System.Drawing.Point(407, 547);
             this.txtDuijiaoC.Name = "txtDuijiaoC";
-            this.txtDuijiaoC.Size = new System.Drawing.Size(42, 21);
+            this.txtDuijiaoC.Size = new System.Drawing.Size(48, 21);
             this.txtDuijiaoC.TabIndex = 118;
             this.txtDuijiaoC.Tag = this.tbDuijiaoC;
             this.txtDuijiaoC.Text = "190";
@@ -1283,7 +1283,7 @@
             // 
             // tbGonglvC
             // 
-            this.tbGonglvC.Location = new System.Drawing.Point(67, 492);
+            this.tbGonglvC.Location = new System.Drawing.Point(78, 492);
             this.tbGonglvC.Maximum = 100;
             this.tbGonglvC.Name = "tbGonglvC";
             this.tbGonglvC.Size = new System.Drawing.Size(315, 45);
@@ -1293,9 +1293,9 @@
             // 
             // txtGonglvC
             // 
-            this.txtGonglvC.Location = new System.Drawing.Point(387, 499);
+            this.txtGonglvC.Location = new System.Drawing.Point(407, 502);
             this.txtGonglvC.Name = "txtGonglvC";
-            this.txtGonglvC.Size = new System.Drawing.Size(64, 21);
+            this.txtGonglvC.Size = new System.Drawing.Size(48, 21);
             this.txtGonglvC.TabIndex = 116;
             this.txtGonglvC.Tag = this.tbGonglvC;
             this.txtGonglvC.TextChanged += new System.EventHandler(this.txt_TextChanged);
@@ -1304,7 +1304,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(16, 553);
+            this.label23.Location = new System.Drawing.Point(6, 556);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(29, 12);
             this.label23.TabIndex = 117;
@@ -1313,30 +1313,30 @@
             // 
             // label35
             // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(16, 502);
+            this.label35.Location = new System.Drawing.Point(6, 502);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(53, 12);
+            this.label35.Size = new System.Drawing.Size(53, 24);
             this.label35.TabIndex = 115;
             this.label35.Tag = "发射功率";
             this.label35.Text = "发射功率";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label36
             // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(16, 466);
+            this.label36.Location = new System.Drawing.Point(6, 466);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(41, 12);
+            this.label36.Size = new System.Drawing.Size(65, 24);
             this.label36.TabIndex = 114;
             this.label36.Tag = "分辨率";
             this.label36.Text = "分辨率";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // chkBaipinghengC
             // 
             this.chkBaipinghengC.AutoSize = true;
             this.chkBaipinghengC.Checked = true;
             this.chkBaipinghengC.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkBaipinghengC.Location = new System.Drawing.Point(422, 323);
+            this.chkBaipinghengC.Location = new System.Drawing.Point(407, 342);
             this.chkBaipinghengC.Name = "chkBaipinghengC";
             this.chkBaipinghengC.Size = new System.Drawing.Size(48, 16);
             this.chkBaipinghengC.TabIndex = 113;
@@ -1347,7 +1347,7 @@
             // 
             // tbBaoguangC
             // 
-            this.tbBaoguangC.Location = new System.Drawing.Point(67, 415);
+            this.tbBaoguangC.Location = new System.Drawing.Point(78, 415);
             this.tbBaoguangC.Maximum = 0;
             this.tbBaoguangC.Minimum = -13;
             this.tbBaoguangC.Name = "tbBaoguangC";
@@ -1359,9 +1359,9 @@
             // 
             // txtBaoguangC
             // 
-            this.txtBaoguangC.Location = new System.Drawing.Point(374, 422);
+            this.txtBaoguangC.Location = new System.Drawing.Point(407, 425);
             this.txtBaoguangC.Name = "txtBaoguangC";
-            this.txtBaoguangC.Size = new System.Drawing.Size(42, 21);
+            this.txtBaoguangC.Size = new System.Drawing.Size(48, 21);
             this.txtBaoguangC.TabIndex = 89;
             this.txtBaoguangC.Tag = this.tbBaoguangC;
             this.txtBaoguangC.Text = "-6";
@@ -1370,7 +1370,7 @@
             // 
             // tbZengyiC
             // 
-            this.tbZengyiC.Location = new System.Drawing.Point(67, 364);
+            this.tbZengyiC.Location = new System.Drawing.Point(78, 364);
             this.tbZengyiC.Maximum = 240;
             this.tbZengyiC.Minimum = 1;
             this.tbZengyiC.Name = "tbZengyiC";
@@ -1381,7 +1381,7 @@
             // 
             // tbBaipinghengC
             // 
-            this.tbBaipinghengC.Location = new System.Drawing.Point(67, 313);
+            this.tbBaipinghengC.Location = new System.Drawing.Point(78, 313);
             this.tbBaipinghengC.Maximum = 6500;
             this.tbBaipinghengC.Minimum = 2806;
             this.tbBaipinghengC.Name = "tbBaipinghengC";
@@ -1393,9 +1393,9 @@
             // 
             // txtBaipinghengC
             // 
-            this.txtBaipinghengC.Location = new System.Drawing.Point(374, 320);
+            this.txtBaipinghengC.Location = new System.Drawing.Point(407, 320);
             this.txtBaipinghengC.Name = "txtBaipinghengC";
-            this.txtBaipinghengC.Size = new System.Drawing.Size(42, 21);
+            this.txtBaipinghengC.Size = new System.Drawing.Size(48, 21);
             this.txtBaipinghengC.TabIndex = 83;
             this.txtBaipinghengC.Tag = this.tbBaipinghengC;
             this.txtBaipinghengC.Text = "4600";
@@ -1404,7 +1404,7 @@
             // 
             // tbGamaC
             // 
-            this.tbGamaC.Location = new System.Drawing.Point(67, 262);
+            this.tbGamaC.Location = new System.Drawing.Point(78, 262);
             this.tbGamaC.Maximum = 176;
             this.tbGamaC.Minimum = 80;
             this.tbGamaC.Name = "tbGamaC";
@@ -1416,9 +1416,9 @@
             // 
             // txtGamaC
             // 
-            this.txtGamaC.Location = new System.Drawing.Point(387, 270);
+            this.txtGamaC.Location = new System.Drawing.Point(407, 270);
             this.txtGamaC.Name = "txtGamaC";
-            this.txtGamaC.Size = new System.Drawing.Size(64, 21);
+            this.txtGamaC.Size = new System.Drawing.Size(48, 21);
             this.txtGamaC.TabIndex = 81;
             this.txtGamaC.Tag = this.tbGamaC;
             this.txtGamaC.Text = "100";
@@ -1427,7 +1427,7 @@
             // 
             // tbQinxiduC
             // 
-            this.tbQinxiduC.Location = new System.Drawing.Point(67, 211);
+            this.tbQinxiduC.Location = new System.Drawing.Point(78, 211);
             this.tbQinxiduC.Maximum = 100;
             this.tbQinxiduC.Name = "tbQinxiduC";
             this.tbQinxiduC.Size = new System.Drawing.Size(315, 45);
@@ -1437,9 +1437,9 @@
             // 
             // txtQinxiduC
             // 
-            this.txtQinxiduC.Location = new System.Drawing.Point(387, 219);
+            this.txtQinxiduC.Location = new System.Drawing.Point(407, 219);
             this.txtQinxiduC.Name = "txtQinxiduC";
-            this.txtQinxiduC.Size = new System.Drawing.Size(64, 21);
+            this.txtQinxiduC.Size = new System.Drawing.Size(48, 21);
             this.txtQinxiduC.TabIndex = 79;
             this.txtQinxiduC.Tag = this.tbQinxiduC;
             this.txtQinxiduC.Text = "0";
@@ -1448,7 +1448,7 @@
             // 
             // tbBaoheduC
             // 
-            this.tbBaoheduC.Location = new System.Drawing.Point(67, 160);
+            this.tbBaoheduC.Location = new System.Drawing.Point(78, 160);
             this.tbBaoheduC.Maximum = 100;
             this.tbBaoheduC.Name = "tbBaoheduC";
             this.tbBaoheduC.Size = new System.Drawing.Size(315, 45);
@@ -1459,9 +1459,9 @@
             // 
             // txtBaoheduC
             // 
-            this.txtBaoheduC.Location = new System.Drawing.Point(387, 168);
+            this.txtBaoheduC.Location = new System.Drawing.Point(407, 168);
             this.txtBaoheduC.Name = "txtBaoheduC";
-            this.txtBaoheduC.Size = new System.Drawing.Size(64, 21);
+            this.txtBaoheduC.Size = new System.Drawing.Size(48, 21);
             this.txtBaoheduC.TabIndex = 77;
             this.txtBaoheduC.Tag = this.tbBaoheduC;
             this.txtBaoheduC.Text = "48";
@@ -1470,7 +1470,7 @@
             // 
             // tbSediaoC
             // 
-            this.tbSediaoC.Location = new System.Drawing.Point(67, 109);
+            this.tbSediaoC.Location = new System.Drawing.Point(78, 109);
             this.tbSediaoC.Maximum = 2000;
             this.tbSediaoC.Minimum = -2000;
             this.tbSediaoC.Name = "tbSediaoC";
@@ -1481,7 +1481,7 @@
             // 
             // tbDuibiduC
             // 
-            this.tbDuibiduC.Location = new System.Drawing.Point(67, 58);
+            this.tbDuibiduC.Location = new System.Drawing.Point(78, 58);
             this.tbDuibiduC.Maximum = 95;
             this.tbDuibiduC.Name = "tbDuibiduC";
             this.tbDuibiduC.Size = new System.Drawing.Size(315, 45);
@@ -1492,9 +1492,9 @@
             // 
             // txtDuibiduC
             // 
-            this.txtDuibiduC.Location = new System.Drawing.Point(387, 66);
+            this.txtDuibiduC.Location = new System.Drawing.Point(407, 66);
             this.txtDuibiduC.Name = "txtDuibiduC";
-            this.txtDuibiduC.Size = new System.Drawing.Size(64, 21);
+            this.txtDuibiduC.Size = new System.Drawing.Size(48, 21);
             this.txtDuibiduC.TabIndex = 73;
             this.txtDuibiduC.Tag = this.tbDuibiduC;
             this.txtDuibiduC.Text = "2";
@@ -1503,7 +1503,7 @@
             // 
             // tbLiangduC
             // 
-            this.tbLiangduC.Location = new System.Drawing.Point(67, 7);
+            this.tbLiangduC.Location = new System.Drawing.Point(78, 7);
             this.tbLiangduC.Maximum = 127;
             this.tbLiangduC.Name = "tbLiangduC";
             this.tbLiangduC.Size = new System.Drawing.Size(315, 45);
@@ -1513,9 +1513,9 @@
             // 
             // txtLiangduC
             // 
-            this.txtLiangduC.Location = new System.Drawing.Point(387, 15);
+            this.txtLiangduC.Location = new System.Drawing.Point(407, 15);
             this.txtLiangduC.Name = "txtLiangduC";
-            this.txtLiangduC.Size = new System.Drawing.Size(64, 21);
+            this.txtLiangduC.Size = new System.Drawing.Size(48, 21);
             this.txtLiangduC.TabIndex = 71;
             this.txtLiangduC.Tag = this.tbLiangduC;
             this.txtLiangduC.Text = "0";
@@ -1525,7 +1525,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(16, 425);
+            this.label21.Location = new System.Drawing.Point(6, 425);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(29, 12);
             this.label21.TabIndex = 88;
@@ -1534,9 +1534,9 @@
             // 
             // txtZengyiC
             // 
-            this.txtZengyiC.Location = new System.Drawing.Point(387, 372);
+            this.txtZengyiC.Location = new System.Drawing.Point(407, 372);
             this.txtZengyiC.Name = "txtZengyiC";
-            this.txtZengyiC.Size = new System.Drawing.Size(64, 21);
+            this.txtZengyiC.Size = new System.Drawing.Size(48, 21);
             this.txtZengyiC.TabIndex = 87;
             this.txtZengyiC.Text = "1";
             this.txtZengyiC.TextChanged += new System.EventHandler(this.txt_TextChanged);
@@ -1545,7 +1545,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(16, 374);
+            this.label22.Location = new System.Drawing.Point(6, 374);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(29, 12);
             this.label22.TabIndex = 86;
@@ -1554,18 +1554,18 @@
             // 
             // label24
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(16, 323);
+            this.label24.Location = new System.Drawing.Point(6, 323);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(41, 12);
+            this.label24.Size = new System.Drawing.Size(65, 24);
             this.label24.TabIndex = 82;
             this.label24.Tag = "白平衡";
             this.label24.Text = "白平衡";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(16, 272);
+            this.label25.Location = new System.Drawing.Point(6, 272);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(29, 12);
             this.label25.TabIndex = 80;
@@ -1575,7 +1575,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(16, 221);
+            this.label26.Location = new System.Drawing.Point(6, 222);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(41, 12);
             this.label26.TabIndex = 78;
@@ -1585,7 +1585,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(16, 170);
+            this.label27.Location = new System.Drawing.Point(6, 171);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(41, 12);
             this.label27.TabIndex = 76;
@@ -1594,9 +1594,9 @@
             // 
             // txtSediaoC
             // 
-            this.txtSediaoC.Location = new System.Drawing.Point(387, 117);
+            this.txtSediaoC.Location = new System.Drawing.Point(407, 117);
             this.txtSediaoC.Name = "txtSediaoC";
-            this.txtSediaoC.Size = new System.Drawing.Size(64, 21);
+            this.txtSediaoC.Size = new System.Drawing.Size(48, 21);
             this.txtSediaoC.TabIndex = 75;
             this.txtSediaoC.Tag = this.tbSediaoC;
             this.txtSediaoC.Text = "0";
@@ -1606,7 +1606,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(16, 119);
+            this.label28.Location = new System.Drawing.Point(6, 120);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(29, 12);
             this.label28.TabIndex = 74;
@@ -1615,18 +1615,18 @@
             // 
             // label29
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(16, 68);
+            this.label29.Location = new System.Drawing.Point(6, 66);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(41, 12);
+            this.label29.Size = new System.Drawing.Size(41, 24);
             this.label29.TabIndex = 72;
             this.label29.Tag = "对比度";
             this.label29.Text = "对比度";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(16, 17);
+            this.label30.Location = new System.Drawing.Point(6, 18);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(29, 12);
             this.label30.TabIndex = 70;
@@ -1635,9 +1635,9 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(482, 24);
+            this.btnSave.Location = new System.Drawing.Point(500, 24);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 597);
+            this.btnSave.Size = new System.Drawing.Size(63, 597);
             this.btnSave.TabIndex = 1;
             this.btnSave.Tag = "保存";
             this.btnSave.Text = "保存";

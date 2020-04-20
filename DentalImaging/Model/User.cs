@@ -145,7 +145,7 @@ namespace DentalImaging.Model
                     f.ImgPath = imgPath;
                     f.IsSaveToFile = true;
                     File.WriteAllText($"{PatientPath}\\{history.HistoryNo}\\{f.FileName}.ini", f.ToJson());
-                    ((Image)f.Img).Save(imgPath);
+                    f.Img.Save(imgPath);
                 });
             }
             File.WriteAllText($"{dirName}\\{history.HistoryNo}.ini", history.ToJson());

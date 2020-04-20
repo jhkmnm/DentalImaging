@@ -176,14 +176,6 @@ namespace DentalImaging
         {
             if (isNeedRecord)
             {
-                ////Graphics g = Graphics.FromImage(image);
-                ////SolidBrush drawBrush = new SolidBrush(Color.Yellow);
-                ////Font drawFont = new Font("Arial", 6, FontStyle.Bold, GraphicsUnit.Millimeter);
-                ////int xPos = image.Width - (image.Width - 15);
-                ////int yPos = 10;
-                //写到屏幕上的时间
-                ////g.DrawString(drawDate, drawFont, drawBrush, xPos, yPos);
-
                 var drawDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                 this.BeginInvoke(new Action(() => { lblTime.Text = drawDate; }));
                 VideoOutPut.WriteVideoFrame(eventArgs.Frame);
@@ -402,10 +394,11 @@ namespace DentalImaging
         private void btnPai_Click(object sender, EventArgs e)
         {
             OrderType type = OrderType.PSend_Rule_See;
-            if (tabControl1.SelectedIndex == 1)
-                type = OrderType.PSend_UV_See;
-            else if (tabControl1.SelectedIndex == 2)
-                type = OrderType.PSend_ICON_See;
+            //指令修改
+            //if (tabControl1.SelectedIndex == 1)
+            //    type = OrderType.PSend_UV_See;
+            //else if (tabControl1.SelectedIndex == 2)
+            //    type = OrderType.PSend_ICON_See;
             messageHelp.SendMessage(UsbMessage.OrdersB[type]);
         }
 
@@ -1224,7 +1217,7 @@ namespace DentalImaging
         }
 
         /// <summary>
-        /// 切换到常规拍摄模式
+        /// 切换到微距拍摄模式
         /// </summary>
         private void RuleView()
         {
@@ -1254,17 +1247,18 @@ namespace DentalImaging
         {
             try
             {
-                if (isMToP)
-                {
-                    messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PReturn_Rule_See]);
-                }
-                else
-                {
-                    messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PSend_Rule_See]);
-                }                
-                tabControl1.SelectedTab = tabPage1;
+                //指令修改
+                //if (isMToP)
+                //{
+                messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PReturn_Rule_See]);
+                //}
+                //else
+                //{
+                //    messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PSend_Rule_See]);
+                //}
+                //tabControl1.SelectedTab = tabPage1;
                 isMToP = false;
-                SetCurrentPage(0);
+                //SetCurrentPage(0);
                 Pai();
             }
             catch (Exception ex)

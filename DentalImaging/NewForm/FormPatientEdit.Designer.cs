@@ -71,7 +71,7 @@
             // labelControl1
             // 
             this.labelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelControl1.Location = new System.Drawing.Point(451, 424);
+            this.labelControl1.Location = new System.Drawing.Point(431, 428);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(28, 14);
             this.labelControl1.TabIndex = 0;
@@ -81,7 +81,7 @@
             // labelControl2
             // 
             this.labelControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelControl2.Location = new System.Drawing.Point(14, 461);
+            this.labelControl2.Location = new System.Drawing.Point(14, 465);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(52, 14);
             this.labelControl2.TabIndex = 1;
@@ -101,7 +101,7 @@
             // labelControl4
             // 
             this.labelControl4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelControl4.Location = new System.Drawing.Point(446, 461);
+            this.labelControl4.Location = new System.Drawing.Point(431, 465);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(40, 14);
             this.labelControl4.TabIndex = 2;
@@ -111,7 +111,7 @@
             // labelControl5
             // 
             this.labelControl5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelControl5.Location = new System.Drawing.Point(451, 499);
+            this.labelControl5.Location = new System.Drawing.Point(431, 501);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(28, 14);
             this.labelControl5.TabIndex = 4;
@@ -121,7 +121,7 @@
             // txtName
             // 
             this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtName.Location = new System.Drawing.Point(500, 421);
+            this.txtName.Location = new System.Drawing.Point(508, 426);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(142, 20);
             this.txtName.TabIndex = 5;
@@ -130,7 +130,7 @@
             // txtLink
             // 
             this.txtLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtLink.Location = new System.Drawing.Point(83, 498);
+            this.txtLink.Location = new System.Drawing.Point(98, 498);
             this.txtLink.Name = "txtLink";
             this.txtLink.Size = new System.Drawing.Size(155, 20);
             this.txtLink.TabIndex = 8;
@@ -138,7 +138,7 @@
             // txtNo
             // 
             this.txtNo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtNo.Location = new System.Drawing.Point(500, 458);
+            this.txtNo.Location = new System.Drawing.Point(508, 462);
             this.txtNo.Name = "txtNo";
             this.txtNo.Size = new System.Drawing.Size(262, 20);
             this.txtNo.TabIndex = 7;
@@ -147,7 +147,7 @@
             // txtAdress
             // 
             this.txtAdress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtAdress.Location = new System.Drawing.Point(500, 495);
+            this.txtAdress.Location = new System.Drawing.Point(508, 498);
             this.txtAdress.Name = "txtAdress";
             this.txtAdress.Size = new System.Drawing.Size(262, 20);
             this.txtAdress.TabIndex = 9;
@@ -211,7 +211,7 @@
             // 
             this.txtBirthDay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtBirthDay.EditValue = null;
-            this.txtBirthDay.Location = new System.Drawing.Point(83, 458);
+            this.txtBirthDay.Location = new System.Drawing.Point(98, 462);
             this.txtBirthDay.Name = "txtBirthDay";
             this.txtBirthDay.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -262,7 +262,7 @@
             // txtID
             // 
             this.txtID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtID.Location = new System.Drawing.Point(83, 424);
+            this.txtID.Location = new System.Drawing.Point(98, 426);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(155, 20);
             this.txtID.TabIndex = 24;
@@ -270,7 +270,7 @@
             // labelControl6
             // 
             this.labelControl6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelControl6.Location = new System.Drawing.Point(18, 427);
+            this.labelControl6.Location = new System.Drawing.Point(14, 428);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(28, 14);
             this.labelControl6.TabIndex = 23;

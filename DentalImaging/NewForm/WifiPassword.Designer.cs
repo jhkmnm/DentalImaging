@@ -37,9 +37,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(94, 14);
+            this.textBox1.Location = new System.Drawing.Point(110, 14);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(286, 22);
+            this.textBox1.Size = new System.Drawing.Size(270, 22);
             this.textBox1.TabIndex = 0;
             this.textBox1.UseSystemPasswordChar = true;
             // 
@@ -78,7 +78,7 @@
             // chkRPwd
             // 
             this.chkRPwd.AutoSize = true;
-            this.chkRPwd.Location = new System.Drawing.Point(94, 56);
+            this.chkRPwd.Location = new System.Drawing.Point(17, 56);
             this.chkRPwd.Name = "chkRPwd";
             this.chkRPwd.Size = new System.Drawing.Size(74, 18);
             this.chkRPwd.TabIndex = 4;
@@ -96,6 +96,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "WifiPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WifiPassword";

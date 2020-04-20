@@ -75,6 +75,9 @@ namespace DentalImaging.Help
         /// <param name="control"></param>
         public static void InitControlLanguage(Control control)
         {
+            if (control is TextBox)
+                return;
+
             if(control.CompanyName == "Developer Express Inc.")
             {
                 switch(control.ProductName)
@@ -94,10 +97,13 @@ namespace DentalImaging.Help
                             }
                         }
                         break;
+                    case "DevExpress.XtraGrid":
+
+                        break;
                     default:
                         SetControlLanguage(control);
                         break;
-                }                
+                }
             }
             else
             {
@@ -113,7 +119,7 @@ namespace DentalImaging.Help
         {
             //if(!abcList.ContainsKey(control.Text))
             //    abcList.Add(control.Text, "");
-            var text = control.Tag ?? control.Text;
+            var text = string.IsNullOrEmpty(control.Tag?.ToString()) ? control.Text : control.Tag;
             control.Text = GetTextLanguage(text.ToString());
         }
 
@@ -130,7 +136,13 @@ namespace DentalImaging.Help
         /// <returns></returns>
         public static string GetTextLanguage(string text)
         {
-            if (resources.Keys.Contains(text))
+            if (text == "中文" || text == "English")
+                return text;
+            else if (text == "cn")
+                return "中文";
+            else if (text == "en")
+                return "English";
+            else if (resources.Keys.Contains(text))
                 return resources[text];
             return text;
         }

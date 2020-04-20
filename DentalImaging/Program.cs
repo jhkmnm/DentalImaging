@@ -24,7 +24,7 @@ namespace DentalImaging
         static void Main()
         {
             try
-            {
+            {              
                 var logCfg = new FileInfo(AppDomain.CurrentDomain.BaseDirectory + "log4net.config");
                 XmlConfigurator.ConfigureAndWatch(logCfg);
                 logger = LogManager.GetLogger(typeof(Portal));
@@ -84,11 +84,9 @@ namespace DentalImaging
             if (newMutexCreated)
             {
                 Console.WriteLine("程序已启动");
-                //todo:此处为要执行的任务
             }
             else
             {
-                //MessageDxUtil.ShowTips("另一个窗口已在运行，不能重复运行。");
                 CommHelp.ShowTips("另一个窗口已在运行，不能重复运行。");
                 Thread.Sleep(1000);
                 Environment.Exit(1);//退出程序

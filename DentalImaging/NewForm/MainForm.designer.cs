@@ -249,6 +249,7 @@
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.Caption, this.barCheckItem1, "中文"),
             new DevExpress.XtraBars.LinkPersistInfo(this.barCheckItem2)});
             this.barSubItem1.Name = "barSubItem1";
+            this.barSubItem1.Tag = "语言选择";
             // 
             // barCheckItem1
             // 
@@ -257,15 +258,13 @@
             this.barCheckItem1.Id = 87;
             this.barCheckItem1.Name = "barCheckItem1";
             this.barCheckItem1.Tag = "cn";
-            this.barCheckItem1.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.barCheckItem1_CheckedChanged);
             // 
             // barCheckItem2
             // 
-            this.barCheckItem2.Caption = "en";
+            this.barCheckItem2.Caption = "English";
             this.barCheckItem2.Id = 88;
             this.barCheckItem2.Name = "barCheckItem2";
             this.barCheckItem2.Tag = "en";
-            this.barCheckItem2.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.barCheckItem2_CheckedChanged);
             // 
             // skinRibbonGalleryBarItem1
             // 
@@ -363,7 +362,8 @@
             this.Ribbon = this.ribbonControl;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar1;
-            this.Tag = "";
+            this.Tag = "口腔内窥镜系统1.0";
+            this.Text = "口腔内窥镜系统1.0";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.MaximizedBoundsChanged += new System.EventHandler(this.MainForm_MaximizedBoundsChanged);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);

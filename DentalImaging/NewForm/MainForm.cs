@@ -73,6 +73,19 @@ namespace WareHouseMis.UI
             }
 
             ribbonControl.Enabled = User.IsRegist;
+
+            if(User.Language == "cn")
+            {
+                barCheckItem1.Checked = true;
+                barCheckItem2.Checked = false;
+            }
+            else
+            {
+                barCheckItem1.Checked = false;
+                barCheckItem2.Checked = true;
+            }
+            barCheckItem1.CheckedChanged += barCheckItem1_CheckedChanged;
+            barCheckItem2.CheckedChanged += barCheckItem2_CheckedChanged;
         }        
 
         /// <summary>
@@ -83,17 +96,17 @@ namespace WareHouseMis.UI
             #region 初始化系统名称
             try
             {
-                string Manufacturer = ConfigurationManager.AppSettings["Manufacturer"];
-                string ApplicationName = GetText(ConfigurationManager.AppSettings["ApplicationName"]);
+                string Manufacturer = "";
+                string ApplicationName = this.Text; //GetText(ConfigurationManager.AppSettings["ApplicationName"]);
                 if (!User.IsRegist)
                 {
                     Manufacturer = GetText("软件未注册");
                 }
                 if(User.Date <= 30)
                 {
-                    ApplicationName += $"({GetText("试用期")} {User.Date}{GetText("天")})";
+                    Manufacturer += $"({GetText("试用期")} {User.Date}{GetText("天")})";
                 }
-                string AppWholeName = string.Format("{0}-{1}", Manufacturer, ApplicationName);
+                string AppWholeName = string.Format("{0}{1}", !string.IsNullOrEmpty(Manufacturer) ? Manufacturer+"-" : "", ApplicationName);
                 Portal.gc.gAppUnit = Manufacturer;
                 Portal.gc.gAppMsgboxTitle = AppWholeName;
                 Portal.gc.gAppWholeName = AppWholeName;
@@ -224,13 +237,23 @@ namespace WareHouseMis.UI
                 User.Language = barCheckItem1.Tag.ToString();
                 LanguageHelp.ReLoadLanguage();
 
+                LanguageHelp.InitControlLanguage(this);
                 Form[] mdiChildren = this.MdiChildren;
-
                 foreach (var child in mdiChildren)
-                {
-                    LanguageHelp.InitControlLanguage(child);
+                {                    
+                    var form = child as FormPatientEdit;
+                    if (form != null)
+                    {
+                        form.Close();
+                        LoadMdiForm(this, typeof(FormPatientEdit));
+                    }
+                    else
+                    {
+                        LanguageHelp.InitControlLanguage(child);
+                    }
                     child.Refresh();
                 }
+                SaveLanguage(User.Language);
             }            
         }
 
@@ -242,19 +265,36 @@ namespace WareHouseMis.UI
                 User.Language = barCheckItem2.Tag.ToString();
                 LanguageHelp.ReLoadLanguage();
 
+                LanguageHelp.InitControlLanguage(this);
                 Form[] mdiChildren = this.MdiChildren;
-
                 foreach (var child in mdiChildren)
                 {
-                    LanguageHelp.InitControlLanguage(child);
-                    child.Refresh();
+                    var form = child as FormPatientEdit;
+                    if (form != null)
+                    {
+                        form.Close();
+                        LoadMdiForm(this, typeof(FormPatientEdit));
+                    }
+                    else
+                    {
+                        LanguageHelp.InitControlLanguage(child);
+                    }
+                    child.Refresh();                    
                 }
+                SaveLanguage(User.Language);
             }
         }
 
         private string GetText(string text)
         {
             return LanguageHelp.GetTextLanguage(text);
+        }
+
+        private void SaveLanguage(string language)
+        {
+            Configuration configuration = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            configuration.AppSettings.Settings["Language"].Value = language;
+            configuration.Save();
         }
     }
 }
