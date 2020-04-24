@@ -71,24 +71,24 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AForge">
-      <HintPath>C:\Users\jhkmnm\Downloads\AForge.NET Framework-2.2.5\Release\AForge.dll</HintPath>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\AForge.dll</HintPath>
     </Reference>
     <Reference Include="AForge.Controls">
-      <HintPath>C:\Users\jhkmnm\Downloads\87361005Camera-use-AForge\Camera\Camera\Aforge\AForge.Controls.dll</HintPath>
+      <HintPath>DLL\AForge.Controls.dll</HintPath>
     </Reference>
     <Reference Include="AForge.Imaging">
-      <HintPath>C:\Users\jhkmnm\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Imaging.dll</HintPath>
+      <HintPath>DLL\AForge.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="AForge.Video">
-      <HintPath>C:\Users\jhkmnm\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.dll</HintPath>
+      <HintPath>DLL\AForge.Video.dll</HintPath>
     </Reference>
     <Reference Include="AForge.Video.DirectShow">
-      <HintPath>C:\Users\jhkmnm\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.DirectShow.dll</HintPath>
+      <HintPath>DLL\AForge.Video.DirectShow.dll</HintPath>
     </Reference>
     <Reference Include="AForge.Video.FFMPEG">
-      <HintPath>C:\Users\jhkmnm\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.FFMPEG.dll</HintPath>
+      <HintPath>DLL\AForge.Video.FFMPEG.dll</HintPath>
     </Reference>
     <Reference Include="ChnCharInfo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=18f031bd02e5e291, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.International.Converters.PinYinConverter.1.0.0\lib\ChnCharInfo.dll</HintPath>
@@ -100,69 +100,69 @@
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.BonusSkins.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.BonusSkins.v14.1.dll</HintPath>
+      <HintPath>DLL\DevExpress.BonusSkins.v14.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Data.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.Data.v14.1.dll</HintPath>
+      <HintPath>DLL\DevExpress.Data.v14.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.Office.v14.1.Core.dll</HintPath>
+      <HintPath>DLL\DevExpress.Office.v14.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.Printing.v14.1.Core.dll</HintPath>
+      <HintPath>DLL\DevExpress.Printing.v14.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.RichEdit.v14.1.Core.dll</HintPath>
+      <HintPath>DLL\DevExpress.RichEdit.v14.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Sparkline.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.Sparkline.v14.1.Core.dll</HintPath>
+      <HintPath>DLL\DevExpress.Sparkline.v14.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.Utils.v14.1.dll</HintPath>
+      <HintPath>DLL\DevExpress.Utils.v14.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.XtraBars.v14.1.dll</HintPath>
+      <HintPath>DLL\DevExpress.XtraBars.v14.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.XtraEditors.v14.1.dll</HintPath>
+      <HintPath>DLL\DevExpress.XtraEditors.v14.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.XtraGrid.v14.1.dll</HintPath>
+      <HintPath>DLL\DevExpress.XtraGrid.v14.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.XtraLayout.v14.1.dll</HintPath>
+      <HintPath>DLL\DevExpress.XtraLayout.v14.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraNavBar.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.XtraNavBar.v14.1.dll</HintPath>
+      <HintPath>DLL\DevExpress.XtraNavBar.v14.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.XtraPrinting.v14.1.dll</HintPath>
+      <HintPath>DLL\DevExpress.XtraPrinting.v14.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraRichEdit.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.XtraRichEdit.v14.1.dll</HintPath>
+      <HintPath>DLL\DevExpress.XtraRichEdit.v14.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraRichEdit.v14.1.Extensions, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.XtraRichEdit.v14.1.Extensions.dll</HintPath>
+      <HintPath>DLL\DevExpress.XtraRichEdit.v14.1.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraScheduler.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraScheduler.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeList.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\02-空白系统框架\WHC.WareHouseMis.DxUI\bin\x86\Debug\DevExpress.XtraTreeList.v14.1.dll</HintPath>
+      <HintPath>DLL\DevExpress.XtraTreeList.v14.1.dll</HintPath>
     </Reference>
     <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="LibUsbDotNet, Version=2.2.8.104, Culture=neutral, processorArchitecture=MSIL">
@@ -171,7 +171,7 @@
     </Reference>
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\源码\伍华聪源码 (2)\伍华聪源码\WHC-Winform框架\01-仓库系统框架\WHC.Framework.StarterDx\bin\Debug\log4net.dll</HintPath>
+      <HintPath>DLL\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Build" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
@@ -432,6 +432,9 @@
     <Content Include="Language\en\Basic.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DLL\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

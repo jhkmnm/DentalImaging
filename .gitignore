@@ -6,3 +6,6 @@
 /packages
 /UpgradeLog.htm
 /.vs
+/RegisterKey/bin/Debug
+/RegisterKey/obj
+*.zip
