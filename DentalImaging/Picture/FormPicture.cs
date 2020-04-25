@@ -213,6 +213,8 @@ namespace DentalImaging
             SetStyle(ControlStyles.AllPaintingInWmPaint, true); // 禁止擦除背景.
             SetStyle(ControlStyles.DoubleBuffer, true); // 双缓冲
             InitializeComponent();
+            tabControl1.TabPages.Remove(tabPage2);
+            tabControl1.TabPages.Remove(tabPage3);
             InitLog4Net();
             try
             {
@@ -1175,6 +1177,18 @@ namespace DentalImaging
                                 case OrderType.Sleep:
                                     action = Sleep;
                                     break;
+                                case OrderType.MTP_Open_SB:
+                                    action = OpenSB;
+                                    break;
+                                case OrderType.MTP_Close_SB:
+                                    action = CloseSB;
+                                    break;
+                                case OrderType.MTP_Open_QB:
+                                    action = OpenQB;
+                                    break;
+                                case OrderType.MTP_Close_QB:
+                                    action = CloseQB;
+                                    break;
                             }
 
                             if (action != null)
@@ -1378,6 +1392,78 @@ namespace DentalImaging
                 {
                     _usbCamera.Stop();
                 }
+            }
+        }
+
+        /// <summary>
+        /// 打开水泵
+        /// </summary>
+        private void OpenSB()
+        {
+            try
+            {
+                logger.Debug("Send:" + UsbMessage.OrdersB[OrderType.PReturn_Open_SB]);
+                messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PReturn_Open_SB]);
+                isMToP = false;
+                btnPao1.Text = "水泵打开";
+            }
+            catch (Exception ex)
+            {
+                logger.Debug(ex.Message + ex.StackTrace);
+            }
+        }
+
+        /// <summary>
+        /// 关闭水泵
+        /// </summary>
+        private void CloseSB()
+        {
+            try
+            {
+                logger.Debug("Send:" + UsbMessage.OrdersB[OrderType.PReturn_Close_SB]);
+                messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PReturn_Close_SB]);
+                isMToP = false;
+                btnPao1.Text = "水泵关闭";
+            }
+            catch (Exception ex)
+            {
+                logger.Debug(ex.Message + ex.StackTrace);
+            }
+        }
+
+        /// <summary>
+        /// 打开气泵
+        /// </summary>
+        private void OpenQB()
+        {
+            try
+            {
+                logger.Debug("Send:" + UsbMessage.OrdersB[OrderType.PReturn_Open_QB]);
+                messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PReturn_Open_QB]);
+                isMToP = false;
+                btnPao2.Text = "气泵打开";
+            }
+            catch (Exception ex)
+            {
+                logger.Debug(ex.Message + ex.StackTrace);
+            }
+        }
+
+        /// <summary>
+        /// 关闭气泵
+        /// </summary>
+        private void CloseQB()
+        {
+            try
+            {
+                logger.Debug("Send:" + UsbMessage.OrdersB[OrderType.PReturn_Close_QB]);
+                messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PReturn_Close_QB]);
+                isMToP = false;
+                btnPao2.Text = "气泵关闭";
+            }
+            catch (Exception ex)
+            {
+                logger.Debug(ex.Message + ex.StackTrace);
             }
         }
 

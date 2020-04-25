@@ -8,6 +8,7 @@ using DentalImaging.Model;
 using System.Configuration;
 using DentalImaging.Help;
 using DentalImaging.NewForm;
+using System.IO;
 
 namespace WareHouseMis.UI
 {
@@ -48,7 +49,7 @@ namespace WareHouseMis.UI
         {
             InitializeComponent();
 
-            User.DBPath = Environment.CurrentDirectory + "\\Patient";// ConfigurationManager.AppSettings["DBPath"];
+            User.DBPath = ConfigurationManager.AppSettings["DBPath"];//Environment.CurrentDirectory + "\\Patient";// 
             dirName = User.DBPath;
             User.ReadPatients();
             InitUserRelated();
@@ -294,6 +295,105 @@ namespace WareHouseMis.UI
         {
             Configuration configuration = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
             configuration.AppSettings.Settings["Language"].Value = language;
+            configuration.Save();
+        }
+
+        private void tool_FilePath_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            using (FolderBrowserDialog dialog = new FolderBrowserDialog())
+            {
+                dialog.Description = GetText("请选择保存的目录");
+                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    if (string.IsNullOrEmpty(dialog.SelectedPath))
+                    {
+                        CommHelp.ShowWarning("文件夹路径不能为空");
+                        return;
+                    }
+                    if(dialog.SelectedPath != User.DBPath)
+                    {
+                        var yesno = CommHelp.ShowYesNoAndTips("选择了新的目录，是否将原目录下的文件移动到新目录，请确保原目录下的文件没有被占用，如移动失败请手动移动");
+                        if(yesno == DialogResult.Yes)
+                        {
+                            MoveFolder(User.DBPath, dialog.SelectedPath);
+                            SaveDbPath(dialog.SelectedPath);
+                            CommHelp.ShowTips("设置成功");
+                        }
+                    }
+                }
+            }
+        }
+
+        public bool MoveFolder(string sourceFolder, string targetFolder)
+        {
+            // 检查目标目录是否以目录分割字符结束,如果不是则添加
+            if (targetFolder[targetFolder.Length - 1] != Path.DirectorySeparatorChar)
+            {
+                targetFolder += Path.DirectorySeparatorChar;
+            }
+            if (sourceFolder[sourceFolder.Length - 1] != Path.DirectorySeparatorChar)
+            {
+                sourceFolder += Path.DirectorySeparatorChar;
+            }
+
+            List<string> fileNames = new List<string>();
+
+            if (Directory.Exists(sourceFolder))
+            {
+                //得到所有文件路径
+                fileNames.AddRange(Directory.GetFiles(sourceFolder, "*", SearchOption.AllDirectories));
+                if (fileNames.Count > 0)
+                {
+                    //同盘符
+                    if (sourceFolder[0].Equals(targetFolder[0]))
+                    {
+                        if (Directory.Exists(targetFolder))
+                        {
+                            Directory.Delete(targetFolder, true);
+                        }
+                        Directory.Move(sourceFolder, targetFolder);
+                        return true;
+                    }
+                    else
+                    {
+                        if (!Directory.Exists(targetFolder))
+                        {
+                            Directory.CreateDirectory(targetFolder);
+                        }
+                        DirectoryInfo dir = new DirectoryInfo(sourceFolder);
+                        DirectoryInfo[] folders = dir.GetDirectories("*", SearchOption.AllDirectories);
+
+                        for (int i = 0; i < folders.Length; i++)
+                        {
+                            string name = folders[i].FullName.Replace(sourceFolder, targetFolder);
+                            if (!Directory.Exists(name))
+                            {
+                                Directory.CreateDirectory(name);
+                            }
+                        }
+
+                        foreach (string filename in fileNames)
+                        {
+                            string fn = filename.Replace(sourceFolder, targetFolder);
+                            if (File.Exists(fn))
+                            {
+                                File.Delete(fn);
+                            }
+                            File.Move(filename, filename.Replace(sourceFolder, targetFolder));
+                        }
+                        //删除空的目录结构
+                        Directory.Delete(sourceFolder, true);
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        private void SaveDbPath(string path)
+        {
+            Configuration configuration = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            configuration.AppSettings.Settings["DBPath"].Value = path;
             configuration.Save();
         }
     }

@@ -51,6 +51,8 @@
             this.pan对比 = new System.Windows.Forms.Panel();
             this.panelTool = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.btnPao2 = new System.Windows.Forms.Button();
+            this.btnPao1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button15 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -63,8 +65,20 @@
             this.button6 = new System.Windows.Forms.Button();
             this.panelImgList = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.image1DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.image2DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.image3DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.image4DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.image5DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.image6DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.image7DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.image8DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.image9DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.image10DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelImgView = new System.Windows.Forms.Panel();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -84,18 +98,6 @@
             this.dataGridViewImageColumn8 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn9 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn10 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.image1DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.image2DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.image3DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.image4DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.image5DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.image6DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.image7DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.image8DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.image9DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.image10DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -106,14 +108,14 @@
             this.panel3.SuspendLayout();
             this.panelImgList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panelImgView.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.panelVideo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -356,6 +358,8 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.btnPao2);
+            this.panel6.Controls.Add(this.btnPao1);
             this.panel6.Controls.Add(this.panel3);
             this.panel6.Controls.Add(this.button18);
             this.panel6.Controls.Add(this.button6);
@@ -363,6 +367,26 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(935, 34);
             this.panel6.TabIndex = 1;
+            // 
+            // btnPao2
+            // 
+            this.btnPao2.Location = new System.Drawing.Point(857, 5);
+            this.btnPao2.Name = "btnPao2";
+            this.btnPao2.Size = new System.Drawing.Size(59, 23);
+            this.btnPao2.TabIndex = 11;
+            this.btnPao2.Tag = "设置";
+            this.btnPao2.Text = "气泵";
+            this.btnPao2.UseVisualStyleBackColor = true;
+            // 
+            // btnPao1
+            // 
+            this.btnPao1.Location = new System.Drawing.Point(769, 6);
+            this.btnPao1.Name = "btnPao1";
+            this.btnPao1.Size = new System.Drawing.Size(68, 23);
+            this.btnPao1.TabIndex = 10;
+            this.btnPao1.Tag = "属性";
+            this.btnPao1.Text = "水泵";
+            this.btnPao1.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -516,6 +540,100 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseUp);
             // 
+            // image1DataGridViewImageColumn
+            // 
+            this.image1DataGridViewImageColumn.DataPropertyName = "Image1";
+            this.image1DataGridViewImageColumn.HeaderText = "Image1";
+            this.image1DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.image1DataGridViewImageColumn.Name = "image1DataGridViewImageColumn";
+            this.image1DataGridViewImageColumn.ReadOnly = true;
+            this.image1DataGridViewImageColumn.Width = 93;
+            // 
+            // image2DataGridViewImageColumn
+            // 
+            this.image2DataGridViewImageColumn.DataPropertyName = "Image2";
+            this.image2DataGridViewImageColumn.HeaderText = "Image2";
+            this.image2DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.image2DataGridViewImageColumn.Name = "image2DataGridViewImageColumn";
+            this.image2DataGridViewImageColumn.ReadOnly = true;
+            this.image2DataGridViewImageColumn.Width = 93;
+            // 
+            // image3DataGridViewImageColumn
+            // 
+            this.image3DataGridViewImageColumn.DataPropertyName = "Image3";
+            this.image3DataGridViewImageColumn.HeaderText = "Image3";
+            this.image3DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.image3DataGridViewImageColumn.Name = "image3DataGridViewImageColumn";
+            this.image3DataGridViewImageColumn.ReadOnly = true;
+            this.image3DataGridViewImageColumn.Width = 93;
+            // 
+            // image4DataGridViewImageColumn
+            // 
+            this.image4DataGridViewImageColumn.DataPropertyName = "Image4";
+            this.image4DataGridViewImageColumn.HeaderText = "Image4";
+            this.image4DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.image4DataGridViewImageColumn.Name = "image4DataGridViewImageColumn";
+            this.image4DataGridViewImageColumn.ReadOnly = true;
+            this.image4DataGridViewImageColumn.Width = 93;
+            // 
+            // image5DataGridViewImageColumn
+            // 
+            this.image5DataGridViewImageColumn.DataPropertyName = "Image5";
+            this.image5DataGridViewImageColumn.HeaderText = "Image5";
+            this.image5DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.image5DataGridViewImageColumn.Name = "image5DataGridViewImageColumn";
+            this.image5DataGridViewImageColumn.ReadOnly = true;
+            this.image5DataGridViewImageColumn.Width = 93;
+            // 
+            // image6DataGridViewImageColumn
+            // 
+            this.image6DataGridViewImageColumn.DataPropertyName = "Image6";
+            this.image6DataGridViewImageColumn.HeaderText = "Image6";
+            this.image6DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.image6DataGridViewImageColumn.Name = "image6DataGridViewImageColumn";
+            this.image6DataGridViewImageColumn.ReadOnly = true;
+            this.image6DataGridViewImageColumn.Width = 93;
+            // 
+            // image7DataGridViewImageColumn
+            // 
+            this.image7DataGridViewImageColumn.DataPropertyName = "Image7";
+            this.image7DataGridViewImageColumn.HeaderText = "Image7";
+            this.image7DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.image7DataGridViewImageColumn.Name = "image7DataGridViewImageColumn";
+            this.image7DataGridViewImageColumn.ReadOnly = true;
+            this.image7DataGridViewImageColumn.Width = 93;
+            // 
+            // image8DataGridViewImageColumn
+            // 
+            this.image8DataGridViewImageColumn.DataPropertyName = "Image8";
+            this.image8DataGridViewImageColumn.HeaderText = "Image8";
+            this.image8DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.image8DataGridViewImageColumn.Name = "image8DataGridViewImageColumn";
+            this.image8DataGridViewImageColumn.ReadOnly = true;
+            this.image8DataGridViewImageColumn.Width = 93;
+            // 
+            // image9DataGridViewImageColumn
+            // 
+            this.image9DataGridViewImageColumn.DataPropertyName = "Image9";
+            this.image9DataGridViewImageColumn.HeaderText = "Image9";
+            this.image9DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.image9DataGridViewImageColumn.Name = "image9DataGridViewImageColumn";
+            this.image9DataGridViewImageColumn.ReadOnly = true;
+            this.image9DataGridViewImageColumn.Width = 93;
+            // 
+            // image10DataGridViewImageColumn
+            // 
+            this.image10DataGridViewImageColumn.DataPropertyName = "Image10";
+            this.image10DataGridViewImageColumn.HeaderText = "Image10";
+            this.image10DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.image10DataGridViewImageColumn.Name = "image10DataGridViewImageColumn";
+            this.image10DataGridViewImageColumn.ReadOnly = true;
+            this.image10DataGridViewImageColumn.Width = 93;
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(DentalImaging.BindImgListSource);
+            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -541,6 +659,18 @@
             this.panelImgView.Size = new System.Drawing.Size(935, 360);
             this.panelImgView.TabIndex = 2;
             this.panelImgView.Visible = false;
+            // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(55, 0);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(825, 409);
+            this.axWindowsMediaPlayer1.TabIndex = 3;
             // 
             // pictureBox4
             // 
@@ -735,112 +865,6 @@
             this.dataGridViewImageColumn10.Name = "dataGridViewImageColumn10";
             this.dataGridViewImageColumn10.Width = 94;
             // 
-            // image1DataGridViewImageColumn
-            // 
-            this.image1DataGridViewImageColumn.DataPropertyName = "Image1";
-            this.image1DataGridViewImageColumn.HeaderText = "Image1";
-            this.image1DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.image1DataGridViewImageColumn.Name = "image1DataGridViewImageColumn";
-            this.image1DataGridViewImageColumn.ReadOnly = true;
-            this.image1DataGridViewImageColumn.Width = 93;
-            // 
-            // image2DataGridViewImageColumn
-            // 
-            this.image2DataGridViewImageColumn.DataPropertyName = "Image2";
-            this.image2DataGridViewImageColumn.HeaderText = "Image2";
-            this.image2DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.image2DataGridViewImageColumn.Name = "image2DataGridViewImageColumn";
-            this.image2DataGridViewImageColumn.ReadOnly = true;
-            this.image2DataGridViewImageColumn.Width = 93;
-            // 
-            // image3DataGridViewImageColumn
-            // 
-            this.image3DataGridViewImageColumn.DataPropertyName = "Image3";
-            this.image3DataGridViewImageColumn.HeaderText = "Image3";
-            this.image3DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.image3DataGridViewImageColumn.Name = "image3DataGridViewImageColumn";
-            this.image3DataGridViewImageColumn.ReadOnly = true;
-            this.image3DataGridViewImageColumn.Width = 93;
-            // 
-            // image4DataGridViewImageColumn
-            // 
-            this.image4DataGridViewImageColumn.DataPropertyName = "Image4";
-            this.image4DataGridViewImageColumn.HeaderText = "Image4";
-            this.image4DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.image4DataGridViewImageColumn.Name = "image4DataGridViewImageColumn";
-            this.image4DataGridViewImageColumn.ReadOnly = true;
-            this.image4DataGridViewImageColumn.Width = 93;
-            // 
-            // image5DataGridViewImageColumn
-            // 
-            this.image5DataGridViewImageColumn.DataPropertyName = "Image5";
-            this.image5DataGridViewImageColumn.HeaderText = "Image5";
-            this.image5DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.image5DataGridViewImageColumn.Name = "image5DataGridViewImageColumn";
-            this.image5DataGridViewImageColumn.ReadOnly = true;
-            this.image5DataGridViewImageColumn.Width = 93;
-            // 
-            // image6DataGridViewImageColumn
-            // 
-            this.image6DataGridViewImageColumn.DataPropertyName = "Image6";
-            this.image6DataGridViewImageColumn.HeaderText = "Image6";
-            this.image6DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.image6DataGridViewImageColumn.Name = "image6DataGridViewImageColumn";
-            this.image6DataGridViewImageColumn.ReadOnly = true;
-            this.image6DataGridViewImageColumn.Width = 93;
-            // 
-            // image7DataGridViewImageColumn
-            // 
-            this.image7DataGridViewImageColumn.DataPropertyName = "Image7";
-            this.image7DataGridViewImageColumn.HeaderText = "Image7";
-            this.image7DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.image7DataGridViewImageColumn.Name = "image7DataGridViewImageColumn";
-            this.image7DataGridViewImageColumn.ReadOnly = true;
-            this.image7DataGridViewImageColumn.Width = 93;
-            // 
-            // image8DataGridViewImageColumn
-            // 
-            this.image8DataGridViewImageColumn.DataPropertyName = "Image8";
-            this.image8DataGridViewImageColumn.HeaderText = "Image8";
-            this.image8DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.image8DataGridViewImageColumn.Name = "image8DataGridViewImageColumn";
-            this.image8DataGridViewImageColumn.ReadOnly = true;
-            this.image8DataGridViewImageColumn.Width = 93;
-            // 
-            // image9DataGridViewImageColumn
-            // 
-            this.image9DataGridViewImageColumn.DataPropertyName = "Image9";
-            this.image9DataGridViewImageColumn.HeaderText = "Image9";
-            this.image9DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.image9DataGridViewImageColumn.Name = "image9DataGridViewImageColumn";
-            this.image9DataGridViewImageColumn.ReadOnly = true;
-            this.image9DataGridViewImageColumn.Width = 93;
-            // 
-            // image10DataGridViewImageColumn
-            // 
-            this.image10DataGridViewImageColumn.DataPropertyName = "Image10";
-            this.image10DataGridViewImageColumn.HeaderText = "Image10";
-            this.image10DataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.image10DataGridViewImageColumn.Name = "image10DataGridViewImageColumn";
-            this.image10DataGridViewImageColumn.ReadOnly = true;
-            this.image10DataGridViewImageColumn.Width = 93;
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = typeof(DentalImaging.BindImgListSource);
-            // 
-            // axWindowsMediaPlayer1
-            // 
-            this.axWindowsMediaPlayer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(55, 0);
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(825, 409);
-            this.axWindowsMediaPlayer1.TabIndex = 3;
-            // 
             // FormPicture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -867,15 +891,15 @@
             this.panel3.ResumeLayout(false);
             this.panelImgList.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panelImgView.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.panelVideo.ResumeLayout(false);
             this.panelVideo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -948,5 +972,7 @@
         private System.Windows.Forms.DataGridViewImageColumn image9DataGridViewImageColumn;
         private System.Windows.Forms.DataGridViewImageColumn image10DataGridViewImageColumn;
         private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.Button btnPao2;
+        private System.Windows.Forms.Button btnPao1;
     }
 }

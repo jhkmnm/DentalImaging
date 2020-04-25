@@ -36,6 +36,7 @@
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.tool_Purchase = new DevExpress.XtraBars.BarButtonItem();
+            this.tool_FilePath = new DevExpress.XtraBars.BarButtonItem();
             this.tool_TakeOut = new DevExpress.XtraBars.BarButtonItem();
             this.tool_StockSearch = new DevExpress.XtraBars.BarButtonItem();
             this.rgbiSkins = new DevExpress.XtraBars.RibbonGalleryBarItem();
@@ -54,11 +55,14 @@
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemProgressBar1 = new DevExpress.XtraEditors.Repository.RepositoryItemProgressBar();
             this.repositoryItemProgressBar2 = new DevExpress.XtraEditors.Repository.RepositoryItemProgressBar();
             this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar3)).BeginInit();
@@ -116,6 +120,7 @@
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl.ExpandCollapseItem,
             this.tool_Purchase,
+            this.tool_FilePath,
             this.tool_TakeOut,
             this.tool_StockSearch,
             this.rgbiSkins,
@@ -160,6 +165,16 @@
             this.tool_Purchase.Name = "tool_Purchase";
             this.tool_Purchase.Tag = "患者信息";
             this.tool_Purchase.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.tool_Purchase_ItemClick);
+            // 
+            // tool_FilePath
+            // 
+            this.tool_FilePath.Caption = "目录设置";
+            this.tool_FilePath.Id = 18;
+            this.tool_FilePath.ImageIndex = 1;
+            this.tool_FilePath.LargeImageIndex = 25;
+            this.tool_FilePath.Name = "tool_FilePath";
+            this.tool_FilePath.Tag = "目录设置";
+            this.tool_FilePath.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.tool_FilePath_ItemClick);
             // 
             // tool_TakeOut
             // 
@@ -298,10 +313,17 @@
             // 
             // ribbonPage2
             // 
+            this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup2});
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Tag = "系统设置";
             this.ribbonPage2.Text = "系统设置";
-            this.ribbonPage2.Visible = false;
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.tool_FilePath);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.ShowCaptionButton = false;
             // 
             // repositoryItemProgressBar1
             // 
@@ -348,6 +370,24 @@
             // 
             this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2010 Blue";
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "患者信息";
+            this.barButtonItem1.Id = 8;
+            this.barButtonItem1.ImageIndex = 1;
+            this.barButtonItem1.LargeImageIndex = 25;
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.Tag = "患者信息";
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "患者信息";
+            this.barButtonItem2.Id = 8;
+            this.barButtonItem2.ImageIndex = 1;
+            this.barButtonItem2.LargeImageIndex = 25;
+            this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.Tag = "患者信息";
+            // 
             // MainForm
             // 
             this.AllowMdiBar = true;
@@ -390,6 +430,7 @@
         private DevExpress.Utils.ImageCollection imageCollection2;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl;
         private DevExpress.XtraBars.BarButtonItem tool_Purchase;
+        private DevExpress.XtraBars.BarButtonItem tool_FilePath;
         private DevExpress.XtraBars.BarButtonItem tool_TakeOut;
         private DevExpress.XtraBars.BarButtonItem tool_StockSearch;
         private DevExpress.XtraBars.RibbonGalleryBarItem rgbiSkins;
@@ -402,6 +443,7 @@
         private DevExpress.XtraBars.BarStaticItem lblCurrentUser;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private DevExpress.XtraEditors.Repository.RepositoryItemProgressBar repositoryItemProgressBar1;
         private DevExpress.XtraEditors.Repository.RepositoryItemProgressBar repositoryItemProgressBar2;
@@ -411,6 +453,8 @@
         private DevExpress.XtraBars.BarCheckItem barCheckItem1;
         private DevExpress.XtraBars.BarCheckItem barCheckItem2;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
     }
 }
 

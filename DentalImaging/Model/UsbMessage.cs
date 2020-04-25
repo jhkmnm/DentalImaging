@@ -44,6 +44,18 @@ namespace DentalImaging.Model
             Orders.Add("2 16 0 1 0 19 0 0", OrderType.PSend_ICON_View);
             Orders.Add("2 32 0 1 0 35 0 0", OrderType.PSend_ICON_See);
 
+            //          5A A5  F0  A1  11 A5  5A
+            Orders.Add("90 165 240 161 17 165 90", OrderType.MTP_Rule_See);     //拍照
+            //          5A A5  F1  A1  11 A5  5A
+            Orders.Add("90 165 241 161 17 165 90", OrderType.MTP_Open_SB);     //打开水泵
+            //          5A A5  F1  A1  00 A5  5A
+            Orders.Add("90 165 241 161 0 165 90", OrderType.MTP_Close_SB);     //关闭水泵
+            //          5A A5  F2  A1  11 A5  5A
+            Orders.Add("90 165 242 161 17 165 90", OrderType.MTP_Open_QB);     //打开气泵
+            //          5A A5  F2  A1  00 A5 5A
+            Orders.Add("90 165 242 161 0 165 90", OrderType.MTP_Close_QB);     //关闭气泵
+
+
             OrdersB.Add(OrderType.Sleep, "1 1 1 1 1 1 1 1");
 
             OrdersB.Add(OrderType.PowerOff, "0 0 1 0 0 1 0 0");
@@ -78,6 +90,17 @@ namespace DentalImaging.Model
 
             OrdersB.Add(OrderType.PSend_Close_Camenable, "{\"Camenable\":\"0\"}");
             OrdersB.Add(OrderType.PSend_Open_Camenable, "{\"Camenable\":\"1\"}");
+
+                                        //          5A  A5  F0  A2  11 A5  5A
+            OrdersB.Add(OrderType.PReturn_Rule_See, "90 165 240 162 17 165 90");     //拍照
+                                        //          5A  A5 F1   A2 11 A5 5A
+            OrdersB.Add(OrderType.PReturn_Open_SB, "90 165 241 162 17 165 90");     //打开水泵
+                                        //          5A  A5 F1   A2 00 A5 5A
+            OrdersB.Add(OrderType.PReturn_Close_SB, "90 165 241 162 0 165 90");     //关闭水泵
+                                        //          5A A5  F2   A2 11 A5 5A
+            OrdersB.Add(OrderType.PReturn_Open_QB, "90 165 242 162 17 165 90");     //打开气泵
+                                        //          5A A5  F2  A2 00 A5 5A
+            OrdersB.Add(OrderType.PReturn_Close_QB, "90 165 242 162 0 165 90");     //关闭气泵
         }        
     }
 
@@ -117,6 +140,22 @@ namespace DentalImaging.Model
         /// MCU发送给PC, UV查看
         /// </summary>
         MTP_ICON_See,
+        /// <summary>
+        /// 打开水泵
+        /// </summary>
+        MTP_Open_SB,
+        /// <summary>
+        /// 关闭水泵
+        /// </summary>
+        MTP_Close_SB,
+        /// <summary>
+        /// 打开气泵
+        /// </summary>
+        MTP_Open_QB,
+        /// <summary>
+        /// 关闭气泵
+        /// </summary>
+        MTP_Close_QB,
         #endregion
 
         #region PC返回
@@ -144,6 +183,22 @@ namespace DentalImaging.Model
         /// PC返回, UV查看
         /// </summary>
         PReturn_ICON_See,
+        /// <summary>
+        /// 打开水泵
+        /// </summary>
+        PReturn_Open_SB,
+        /// <summary>
+        /// 关闭水泵
+        /// </summary>
+        PReturn_Close_SB,
+        /// <summary>
+        /// 打开气泵
+        /// </summary>
+        PReturn_Open_QB,
+        /// <summary>
+        /// 关闭气泵
+        /// </summary>
+        PReturn_Close_QB,
         #endregion
 
         #region PC发送
