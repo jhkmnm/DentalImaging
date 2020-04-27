@@ -45,15 +45,15 @@ namespace DentalImaging.Model
             Orders.Add("2 32 0 1 0 35 0 0", OrderType.PSend_ICON_See);
 
             //          5A A5  F0  A1  11 A5  5A
-            Orders.Add("90 165 240 161 17 165 90", OrderType.MTP_Rule_See);     //拍照
-            //          5A A5  F1  A1  11 A5  5A
-            Orders.Add("90 165 241 161 17 165 90", OrderType.MTP_Open_SB);     //打开水泵
-            //          5A A5  F1  A1  00 A5  5A
-            Orders.Add("90 165 241 161 0 165 90", OrderType.MTP_Close_SB);     //关闭水泵
-            //          5A A5  F2  A1  11 A5  5A
-            Orders.Add("90 165 242 161 17 165 90", OrderType.MTP_Open_QB);     //打开气泵
-            //          5A A5  F2  A1  00 A5 5A
-            Orders.Add("90 165 242 161 0 165 90", OrderType.MTP_Close_QB);     //关闭气泵
+            Orders.Add("90 165 8 240 161 17 165 90", OrderType.MTP_Rule_See);     //拍照
+            //          5A A5  8 F1  A1  11 A5  5A
+            Orders.Add("90 165 8 241 161 17 165 90", OrderType.MTP_Open_SB);     //打开水泵
+            //          5A A5  8 F1  A1  00 A5  5A
+            Orders.Add("90 165 8 241 161 0 165 90", OrderType.MTP_Close_SB);     //关闭水泵
+            //          5A A5  8 F2  A1  11 A5  5A
+            Orders.Add("90 165 8 242 161 17 165 90", OrderType.MTP_Open_QB);     //打开气泵
+            //          5A A5  8 F2  A1  00 A5 5A
+            Orders.Add("90 165 8 242 161 0 165 90", OrderType.MTP_Close_QB);     //关闭气泵
 
 
             OrdersB.Add(OrderType.Sleep, "1 1 1 1 1 1 1 1");
@@ -92,15 +92,15 @@ namespace DentalImaging.Model
             OrdersB.Add(OrderType.PSend_Open_Camenable, "{\"Camenable\":\"1\"}");
 
                                         //          5A  A5  F0  A2  11 A5  5A
-            OrdersB.Add(OrderType.PReturn_Rule_See, "90 165 240 162 17 165 90");     //拍照
-                                        //          5A  A5 F1   A2 11 A5 5A
-            OrdersB.Add(OrderType.PReturn_Open_SB, "90 165 241 162 17 165 90");     //打开水泵
-                                        //          5A  A5 F1   A2 00 A5 5A
-            OrdersB.Add(OrderType.PReturn_Close_SB, "90 165 241 162 0 165 90");     //关闭水泵
-                                        //          5A A5  F2   A2 11 A5 5A
-            OrdersB.Add(OrderType.PReturn_Open_QB, "90 165 242 162 17 165 90");     //打开气泵
-                                        //          5A A5  F2  A2 00 A5 5A
-            OrdersB.Add(OrderType.PReturn_Close_QB, "90 165 242 162 0 165 90");     //关闭气泵
+            OrdersB.Add(OrderType.PReturn_Rule_See, "90 165 8 240 162 17 165 90");     //拍照
+                                        //          5A  A5 8 F1   A2 11 A5 5A
+            OrdersB.Add(OrderType.PReturn_Open_SB, "90 165 8 241 162 17 165 90");     //打开水泵
+                                        //          5A  A5  8 F1   A2 00 A5 5A
+            OrdersB.Add(OrderType.PReturn_Close_SB, "90 165 8 241 162 0 165 90");     //关闭水泵
+                                        //          5A A5   8 F2   A2 11 A5 5A
+            OrdersB.Add(OrderType.PReturn_Open_QB, "90 165 8 242 162 17 165 90");     //打开气泵
+                                        //          5A A5   8 F2  A2 00 A5 5A
+            OrdersB.Add(OrderType.PReturn_Close_QB, "90 165 8 242 162 0 165 90");     //关闭气泵
         }        
     }
 
