@@ -213,8 +213,8 @@ namespace DentalImaging
             SetStyle(ControlStyles.AllPaintingInWmPaint, true); // 禁止擦除背景.
             SetStyle(ControlStyles.DoubleBuffer, true); // 双缓冲
             InitializeComponent();
-            tabControl1.TabPages.Remove(tabPage2);
-            tabControl1.TabPages.Remove(tabPage3);
+            //tabControl1.TabPages.Remove(tabPage2);
+            //tabControl1.TabPages.Remove(tabPage3);
             InitLog4Net();
             try
             {
@@ -301,17 +301,17 @@ namespace DentalImaging
             }
             dataGridView1.AutoGenerateColumns = false;
             bindingSource1.DataSource = imgSource;
-            SetCameraProperty(tabControl1.SelectedIndex == 0 ? 0 : 1);
+            //SetCameraProperty(tabControl1.SelectedIndex == 0 ? 0 : 1);
         }
 
         private void btnVideo_Click(object sender, EventArgs e)
         {
             ShowVideo();
             OrderType type = OrderType.PSend_Rule_View;
-            if (tabControl1.SelectedIndex == 1)
-                type = OrderType.PSend_UV_View;
-            else if (tabControl1.SelectedIndex == 2)
-                type = OrderType.PSend_ICON_View;
+            //if (tabControl1.SelectedIndex == 1)
+            //    type = OrderType.PSend_UV_View;
+            //else if (tabControl1.SelectedIndex == 2)
+            //    type = OrderType.PSend_ICON_View;
             try
             {
                 messageHelp.SendMessage(UsbMessage.OrdersB[type]);
@@ -327,10 +327,10 @@ namespace DentalImaging
         {
             ShowEdit();
             OrderType type = OrderType.PSend_Rule_View;
-            if (tabControl1.SelectedIndex == 1)
-                type = OrderType.PSend_UV_View;
-            else if (tabControl1.SelectedIndex == 2)
-                type = OrderType.PSend_ICON_View;
+            //if (tabControl1.SelectedIndex == 1)
+            //    type = OrderType.PSend_UV_View;
+            //else if (tabControl1.SelectedIndex == 2)
+            //    type = OrderType.PSend_ICON_View;
             messageHelp.SendMessage(UsbMessage.OrdersB[type]);            
         }
 
@@ -1221,12 +1221,12 @@ namespace DentalImaging
         {
             if(currentPage != page)
             {
-                while(tabControl1.TabPages[currentPage].Controls.Count > 0)
-                {
-                    tabControl1.TabPages[page].Controls.Add(tabControl1.TabPages[currentPage].Controls[0]);
-                }
-                currentPage = page;
-                SetCameraProperty(tabControl1.SelectedIndex == 0 ? 0 : 1);
+                //while(tabControl1.TabPages[currentPage].Controls.Count > 0)
+                //{
+                //    tabControl1.TabPages[page].Controls.Add(tabControl1.TabPages[currentPage].Controls[0]);
+                //}
+                //currentPage = page;
+                //SetCameraProperty(tabControl1.SelectedIndex == 0 ? 0 : 1);
             }
         }
 
@@ -1246,9 +1246,9 @@ namespace DentalImaging
                 {
                     messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PSend_Rule_View]);
                 }
-                tabControl1.SelectedTab = tabPage1;
+                //tabControl1.SelectedTab = tabPage1;
                 isMToP = false;
-                SetCurrentPage(0);
+                //SetCurrentPage(0);
                 ShowVideo();
             }
             catch (Exception ex)
@@ -1294,9 +1294,9 @@ namespace DentalImaging
                 {
                     messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PSend_UV_View]);
                 }
-                tabControl1.SelectedTab = tabPage2;
+                //tabControl1.SelectedTab = tabPage2;
                 isMToP = false;
-                SetCurrentPage(1);
+                //SetCurrentPage(1);
                 ShowVideo();
             }
             catch (Exception ex)
@@ -1317,9 +1317,9 @@ namespace DentalImaging
                 {
                     messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PSend_UV_See]);
                 }
-                tabControl1.SelectedTab = tabPage2;
+                //tabControl1.SelectedTab = tabPage2;
                 isMToP = false;
-                SetCurrentPage(1);
+                //SetCurrentPage(1);
                 Pai();
             }
             catch (Exception ex)
@@ -1341,9 +1341,9 @@ namespace DentalImaging
                 {
                     messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PSend_ICON_View]);
                 }
-                tabControl1.SelectedTab = tabPage3;
+                //tabControl1.SelectedTab = tabPage3;
                 isMToP = false;
-                SetCurrentPage(2);
+                //SetCurrentPage(2);
                 ShowVideo();
             }
             catch (Exception ex)
@@ -1364,9 +1364,9 @@ namespace DentalImaging
                 {
                     messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PSend_ICON_See]);
                 }
-                tabControl1.SelectedTab = tabPage3;
+                //tabControl1.SelectedTab = tabPage3;
                 isMToP = false;
-                SetCurrentPage(2);
+                //SetCurrentPage(2);
                 Pai();
             }
             catch (Exception ex)
@@ -1469,16 +1469,16 @@ namespace DentalImaging
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            currentTab = tabControl1.SelectedIndex;
-            if (isMToP) return;
-            if (tabControl1.SelectedIndex == 0)
-                RuleView();
-            else if (tabControl1.SelectedIndex == 1)
-                UVView();
-            else if (tabControl1.SelectedIndex == 2)
-                ICONView();
-            SetCameraParm();
-            //SetCameraProperty(tabControl1.SelectedIndex == 0 ? 0: 1);
+            //currentTab = tabControl1.SelectedIndex;
+            //if (isMToP) return;
+            //if (tabControl1.SelectedIndex == 0)
+            //    RuleView();
+            //else if (tabControl1.SelectedIndex == 1)
+            //    UVView();
+            //else if (tabControl1.SelectedIndex == 2)
+            //    ICONView();
+            //SetCameraParm();
+            ////SetCameraProperty(tabControl1.SelectedIndex == 0 ? 0: 1);
         }
 
         private void tabControl1_Selecting(object sender, TabControlCancelEventArgs e)
@@ -1635,10 +1635,10 @@ namespace DentalImaging
             }
 
             CurrentParm = ParmA;
-            if (tabControl1.SelectedIndex == 1)
-                CurrentParm = ParmB;
-            else if (tabControl1.SelectedIndex == 2)
-                CurrentParm = ParmC;
+            //if (tabControl1.SelectedIndex == 1)
+            //    CurrentParm = ParmB;
+            //else if (tabControl1.SelectedIndex == 2)
+            //    CurrentParm = ParmC;
 
             if (_usbCamera != null)
             {

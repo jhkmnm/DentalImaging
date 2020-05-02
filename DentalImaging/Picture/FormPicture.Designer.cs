@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPicture));
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            //this.tabControl1 = new System.Windows.Forms.TabControl();
+            //this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button13 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -86,8 +86,8 @@
             this.lblTime = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.videoSourcePlayer1 = new AForge.Controls.VideoSourcePlayer();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            //this.tabPage2 = new System.Windows.Forms.TabPage();
+            //this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -98,8 +98,8 @@
             this.dataGridViewImageColumn8 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn9 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn10 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            //this.tabControl1.SuspendLayout();
+            //this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panEdit.SuspendLayout();
             this.panPai.SuspendLayout();
@@ -117,36 +117,36 @@
             this.panelVideo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(943, 597);
-            this.tabControl1.TabIndex = 0;
-            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
-            this.tabControl1.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabControl1_Selecting);
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.panel1);
-            this.tabPage1.Controls.Add(this.pan对比);
-            this.tabPage1.Controls.Add(this.panelTool);
-            this.tabPage1.Controls.Add(this.panel2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPage1.Size = new System.Drawing.Size(935, 571);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Tag = "微距模式";
-            this.tabPage1.Text = "微距模式";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            //// 
+            //// tabControl1
+            //// 
+            //this.tabControl1.Controls.Add(this.tabPage1);
+            //this.tabControl1.Controls.Add(this.tabPage2);
+            //this.tabControl1.Controls.Add(this.tabPage3);
+            //this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            //this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            //this.tabControl1.Name = "tabControl1";
+            //this.tabControl1.SelectedIndex = 0;
+            //this.tabControl1.Size = new System.Drawing.Size(943, 597);
+            //this.tabControl1.TabIndex = 0;
+            //this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+            //this.tabControl1.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabControl1_Selecting);
+            //// 
+            //// tabPage1
+            //// 
+            //this.tabPage1.Controls.Add(this.panel1);
+            //this.tabPage1.Controls.Add(this.pan对比);
+            //this.tabPage1.Controls.Add(this.panelTool);
+            //this.tabPage1.Controls.Add(this.panel2);
+            //this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            //this.tabPage1.Name = "tabPage1";
+            //this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            //this.tabPage1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            //this.tabPage1.Size = new System.Drawing.Size(935, 571);
+            //this.tabPage1.TabIndex = 0;
+            //this.tabPage1.Tag = "微距模式";
+            //this.tabPage1.Text = "微距模式";
+            //this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -751,27 +751,27 @@
             this.videoSourcePlayer1.TabIndex = 0;
             this.videoSourcePlayer1.Text = "videoSourcePlayer1";
             this.videoSourcePlayer1.VideoSource = null;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(935, 571);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Tag = "一般模式";
-            this.tabPage2.Text = "一般模式";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(935, 571);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Tag = "人像模式";
-            this.tabPage3.Text = "人像模式";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            //// 
+            //// tabPage2
+            //// 
+            //this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            //this.tabPage2.Name = "tabPage2";
+            //this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            //this.tabPage2.Size = new System.Drawing.Size(935, 571);
+            //this.tabPage2.TabIndex = 1;
+            //this.tabPage2.Tag = "一般模式";
+            //this.tabPage2.Text = "一般模式";
+            //this.tabPage2.UseVisualStyleBackColor = true;
+            //// 
+            //// tabPage3
+            //// 
+            //this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            //this.tabPage3.Name = "tabPage3";
+            //this.tabPage3.Size = new System.Drawing.Size(935, 571);
+            //this.tabPage3.TabIndex = 2;
+            //this.tabPage3.Tag = "人像模式";
+            //this.tabPage3.Text = "人像模式";
+            //this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // dataGridViewImageColumn1
             // 
@@ -869,8 +869,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(943, 597);
-            this.Controls.Add(this.tabControl1);
+            this.ClientSize = new System.Drawing.Size(919, 574);
+            //this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pan对比);
+            this.Controls.Add(this.panelTool);
+            this.Controls.Add(this.panel2);
             this.IsMdiContainer = true;
             this.KeyPreview = true;
             this.Name = "FormPicture";
@@ -881,8 +885,8 @@
             this.Load += new System.EventHandler(this.FormPicture_Load);
             this.Shown += new System.EventHandler(this.FormPicture_Shown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormPicture_KeyPress);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
+            //this.tabControl1.ResumeLayout(false);
+            //this.tabPage1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panEdit.ResumeLayout(false);
             this.panPai.ResumeLayout(false);
@@ -906,12 +910,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
+        //private System.Windows.Forms.TabControl tabControl1;
+        //private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
+        //private System.Windows.Forms.TabPage tabPage2;
+        //private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Panel panelTool;
         private System.Windows.Forms.Panel panelImgList;
         private AForge.Controls.VideoSourcePlayer videoSourcePlayer1;
