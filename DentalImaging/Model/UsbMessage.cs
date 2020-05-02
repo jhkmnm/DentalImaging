@@ -71,7 +71,7 @@ namespace DentalImaging.Model
             OrdersB.Add(OrderType.MTP_ICON_See, "2 32 0 0 0 34 0 0");
                   
             OrdersB.Add(OrderType.PReturn_Rule_View, "0 1 0 1 1 3 0 0");
-            OrdersB.Add(OrderType.PReturn_Rule_See, "0 2 0 1 1 4 0 0");
+            //OrdersB.Add(OrderType.PReturn_Rule_See, "0 2 0 1 1 4 0 0");
                   
             OrdersB.Add(OrderType.PReturn_UV_View, "1 4 0 1 1 7 0 0");
             OrdersB.Add(OrderType.PReturn_UV_See, "1 8 0 1 1 11 0 0");
