@@ -55,6 +55,9 @@ namespace DentalImaging.Model
             //          5A A5  8 F2  A1  00 A5 5A
             Orders.Add("90 165 8 242 161 0 165 90", OrderType.MTP_Close_QB);     //关闭气泵
 
+            Orders.Add("90 165 8 255 161 17 165 90", OrderType.MTP_Dri_Test);     //设备连接
+            Orders.Add("90 165 8 243 161 17 165 90", OrderType.MTP_Con_Ready);     //通讯readly
+
 
             OrdersB.Add(OrderType.Sleep, "1 1 1 1 1 1 1 1");
 
@@ -101,6 +104,9 @@ namespace DentalImaging.Model
             OrdersB.Add(OrderType.PReturn_Open_QB, "90 165 8 242 162 17 165 90");     //打开气泵
                                         //          5A A5   8 F2  A2 00 A5 5A
             OrdersB.Add(OrderType.PReturn_Close_QB, "90 165 8 242 162 0 165 90");     //关闭气泵
+
+            OrdersB.Add(OrderType.PSend_Dri_Test, "90 165 8 255 162 17 165 90");     //设备连接
+            OrdersB.Add(OrderType.PSend_Con_Ready, "90 165 8 243 161 17 165 90");     //通讯readly
         }        
     }
 
@@ -156,6 +162,14 @@ namespace DentalImaging.Model
         /// 关闭气泵
         /// </summary>
         MTP_Close_QB,
+        /// <summary>
+        /// 设备连接
+        /// </summary>
+        MTP_Dri_Test,
+        /// <summary>
+        /// 通讯连接
+        /// </summary>
+        MTP_Con_Ready,
         #endregion
 
         #region PC返回
@@ -198,7 +212,7 @@ namespace DentalImaging.Model
         /// <summary>
         /// 关闭气泵
         /// </summary>
-        PReturn_Close_QB,
+        PReturn_Close_QB,        
         #endregion
 
         #region PC发送
@@ -226,6 +240,14 @@ namespace DentalImaging.Model
         /// PC发送, UV查看
         /// </summary>
         PSend_ICON_See,
+        /// <summary>
+        /// 设备连接
+        /// </summary>
+        PSend_Dri_Test,
+        /// <summary>
+        /// 通讯连接
+        /// </summary>
+        PSend_Con_Ready,
         #endregion
 
         /// <summary>

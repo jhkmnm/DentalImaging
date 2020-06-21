@@ -429,6 +429,14 @@
     <None Include="Resources\timg %281%29.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="IOC\气泵关%402x.png" />
+    <Content Include="IOC\气泵关.png" />
+    <Content Include="IOC\气泵开%402x.png" />
+    <Content Include="IOC\气泵开.png" />
+    <Content Include="IOC\水泵关%402x.png" />
+    <Content Include="IOC\水泵关.png" />
+    <Content Include="IOC\水泵开%402x.png" />
+    <Content Include="IOC\水泵开.png" />
     <Content Include="Language\en\Basic.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

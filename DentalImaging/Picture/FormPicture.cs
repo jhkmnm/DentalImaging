@@ -19,6 +19,7 @@ using System.Net.NetworkInformation;
 using AForge.Video;
 using System.Drawing.Imaging;
 using DentalImaging.NewForm;
+using System.IO.Ports;
 
 namespace DentalImaging
 {
@@ -57,6 +58,7 @@ namespace DentalImaging
         private int currentTab = 0;
         private DateTime _lastTime;
         bool _needAddImg = false;
+        int videoWidth = 400;
 
         /// <summary>
         /// 设置Alt+S的显示/隐藏窗体全局热键
@@ -117,7 +119,7 @@ namespace DentalImaging
                     videoSourcePlayer1.Visible = false;
                     pictureBox1.Visible = true;
                     btnVideotape.Enabled = true;
-                    btnMirror.Enabled = false;
+                    //btnMirror.Enabled = false;
                     return true;
                 }
                 return false;
@@ -151,17 +153,22 @@ namespace DentalImaging
                 CommHelp.ShowTips("未发现视频设备");
                 this.Close();
                 return false;
-            }
-            selectedDeviceIndex = 0;
+            }          selectedDeviceIndex = 0;
             _usbCamera = new VideoCaptureDevice(videoDevices[selectedDeviceIndex].MonikerString);//连接摄像头。
-            foreach (var v in _usbCamera.VideoCapabilities)
+            if (_usbCamera.VideoCapabilities.Count() == 1)
+                _usbCamera.VideoResolution = _usbCamera.VideoCapabilities[0];
+            else
             {
-                if (v.FrameSize.Width == width)
+                foreach (var v in _usbCamera.VideoCapabilities)
                 {
-                    _usbCamera.VideoResolution = v;
-                    break;
+                    if (v.FrameSize.Width == width)
+                    {
+                        _usbCamera.VideoResolution = v;
+                        break;
+                    }
                 }
             }
+            
             IsWifi = false;
             videoSourcePlayer1.VideoSource = _usbCamera;
             videoSourcePlayer1.Visible = true;
@@ -238,25 +245,36 @@ namespace DentalImaging
                 }
                 else
                 {
-                    if (ConnectionUSBVideo(1920))
+                    if (ConnectionUSBVideo(videoWidth))
                     {
-                        if (allDevices.Count > 0)
+                        try
                         {
-                            try
+                            //messageHelp = new COMHelp("COM4");
+                            bool IsConntion = false;
+                            foreach (string vPortName in SerialPort.GetPortNames())
                             {
-                                messageHelp = new UsbHelp(allDevices[0].Vid, allDevices[0].Pid);
+                                messageHelp = new COMHelp(vPortName);
+                                messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PSend_Dri_Test]);
+                                var msg = messageHelp.UsbMessage();
+                                var message = string.Join(" ", msg);
+                                if (UsbMessage.Orders.ContainsKey(message) && UsbMessage.Orders[message] == OrderType.MTP_Dri_Test)
+                                {
+                                    IsConntion = true;
+                                    messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PSend_Con_Ready]);
+                                    break;
+                                }
                             }
-                            catch (Exception ex)
+                            if (!IsConntion)
                             {
-                                CommHelp.ShowTips("与设备通信失败，请确认设备没有被其它用户占用！");
+                                CommHelp.ShowTips("与设备通信失败，没有找到串口有符合的设备！");
                                 this.DialogResult = DialogResult.No;
                                 this.Close();
                                 return;
                             }
                         }
-                        else
+                        catch (Exception ex)
                         {
-                            CommHelp.ShowTips("未发现视频设备");
+                            CommHelp.ShowTips("与设备通信失败，请确认设备没有被其它用户占用！");
                             this.DialogResult = DialogResult.No;
                             this.Close();
                             return;
@@ -348,7 +366,7 @@ namespace DentalImaging
                 btnPai.Visible = true;
                 btnVideotape.Visible = true;
                 pan对比.Visible = false;
-                button11.Visible = false;
+                //button11.Visible = false;
                 panel3.Visible = false;
             }
             if (IsWifi)
@@ -378,7 +396,7 @@ namespace DentalImaging
             }
             else if(!panelImgView.Visible)
             {
-                button11.Visible = true;                
+                //button11.Visible = true;                
                 panelVideo.Visible = false;
                 panelImgView.Visible = true;
                 panelTool.Location = new Point(panelTool.Location.X, panelTool.Location.Y - panelImgList.Height);
@@ -676,7 +694,7 @@ namespace DentalImaging
                 }
                 else
                 {
-                    if(ConnectionUSBVideo(1920))
+                    if(ConnectionUSBVideo(videoWidth))
                     {
                         _usbCamera.NewFrame += Camera_NewFrame;
                         lblTime.Parent = videoSourcePlayer1;
@@ -690,7 +708,7 @@ namespace DentalImaging
                 if (!IsWifi)
                 {
                     Thread.Sleep(10);
-                    ConnectionUSBVideo(1920);
+                    ConnectionUSBVideo(videoWidth);
                 }
                 lblTime.Visible = false;
                 btnVideotape.Text = LanguageHelp.GetTextLanguage("录像");
@@ -1404,8 +1422,8 @@ namespace DentalImaging
             {
                 logger.Debug("Send:" + UsbMessage.OrdersB[OrderType.PReturn_Open_SB]);
                 messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PReturn_Open_SB]);
-                isMToP = false;
-                btnPao1.Text = "水泵打开";
+                isMToP = false;                
+                picS.Image = global::DentalImaging.Properties.Resources.水泵开;                
             }
             catch (Exception ex)
             {
@@ -1423,7 +1441,7 @@ namespace DentalImaging
                 logger.Debug("Send:" + UsbMessage.OrdersB[OrderType.PReturn_Close_SB]);
                 messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PReturn_Close_SB]);
                 isMToP = false;
-                btnPao1.Text = "水泵关闭";
+                picS.Image = global::DentalImaging.Properties.Resources.水泵关;
             }
             catch (Exception ex)
             {
@@ -1441,7 +1459,7 @@ namespace DentalImaging
                 logger.Debug("Send:" + UsbMessage.OrdersB[OrderType.PReturn_Open_QB]);
                 messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PReturn_Open_QB]);
                 isMToP = false;
-                btnPao2.Text = "气泵打开";
+                picQ.Image = global::DentalImaging.Properties.Resources.气泵开;
             }
             catch (Exception ex)
             {
@@ -1459,7 +1477,7 @@ namespace DentalImaging
                 logger.Debug("Send:" + UsbMessage.OrdersB[OrderType.PReturn_Close_QB]);
                 messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PReturn_Close_QB]);
                 isMToP = false;
-                btnPao2.Text = "气泵关闭";
+                picQ.Image = global::DentalImaging.Properties.Resources.气泵关;
             }
             catch (Exception ex)
             {

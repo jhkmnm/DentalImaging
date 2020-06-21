@@ -30,12 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPicture));
-            //this.tabControl1 = new System.Windows.Forms.TabControl();
-            //this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.btnMirror = new System.Windows.Forms.Button();
             this.btnMax = new System.Windows.Forms.Button();
             this.panEdit = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
@@ -51,8 +46,6 @@
             this.pan对比 = new System.Windows.Forms.Panel();
             this.panelTool = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.btnPao2 = new System.Windows.Forms.Button();
-            this.btnPao1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button15 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -65,6 +58,16 @@
             this.button6 = new System.Windows.Forms.Button();
             this.panelImgList = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelImgView = new System.Windows.Forms.Panel();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelVideo = new System.Windows.Forms.Panel();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.videoSourcePlayer1 = new AForge.Controls.VideoSourcePlayer();
+            this.picS = new System.Windows.Forms.PictureBox();
+            this.picQ = new System.Windows.Forms.PictureBox();
             this.image1DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.image2DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.image3DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
@@ -76,18 +79,8 @@
             this.image9DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.image10DataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panelImgView = new System.Windows.Forms.Panel();
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.panelVideo = new System.Windows.Forms.Panel();
-            this.lblTime = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.videoSourcePlayer1 = new AForge.Controls.VideoSourcePlayer();
-            //this.tabPage2 = new System.Windows.Forms.TabPage();
-            //this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -98,8 +91,6 @@
             this.dataGridViewImageColumn8 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn9 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn10 = new System.Windows.Forms.DataGridViewImageColumn();
-            //this.tabControl1.SuspendLayout();
-            //this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panEdit.SuspendLayout();
             this.panPai.SuspendLayout();
@@ -108,53 +99,22 @@
             this.panel3.SuspendLayout();
             this.panelImgList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panelImgView.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.panelVideo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picQ)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            //// 
-            //// tabControl1
-            //// 
-            //this.tabControl1.Controls.Add(this.tabPage1);
-            //this.tabControl1.Controls.Add(this.tabPage2);
-            //this.tabControl1.Controls.Add(this.tabPage3);
-            //this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            //this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            //this.tabControl1.Name = "tabControl1";
-            //this.tabControl1.SelectedIndex = 0;
-            //this.tabControl1.Size = new System.Drawing.Size(943, 597);
-            //this.tabControl1.TabIndex = 0;
-            //this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
-            //this.tabControl1.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabControl1_Selecting);
-            //// 
-            //// tabPage1
-            //// 
-            //this.tabPage1.Controls.Add(this.panel1);
-            //this.tabPage1.Controls.Add(this.pan对比);
-            //this.tabPage1.Controls.Add(this.panelTool);
-            //this.tabPage1.Controls.Add(this.panel2);
-            //this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            //this.tabPage1.Name = "tabPage1";
-            //this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            //this.tabPage1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            //this.tabPage1.Size = new System.Drawing.Size(935, 571);
-            //this.tabPage1.TabIndex = 0;
-            //this.tabPage1.Tag = "微距模式";
-            //this.tabPage1.Text = "微距模式";
-            //this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.button13);
-            this.panel1.Controls.Add(this.button11);
-            this.panel1.Controls.Add(this.btnMirror);
             this.panel1.Controls.Add(this.btnMax);
             this.panel1.Controls.Add(this.panEdit);
             this.panel1.Controls.Add(this.panPai);
@@ -166,46 +126,11 @@
             this.panel1.Size = new System.Drawing.Size(935, 68);
             this.panel1.TabIndex = 0;
             // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(605, 1);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(32, 64);
-            this.button13.TabIndex = 12;
-            this.button13.Tag = "重置";
-            this.button13.Text = "重置";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Visible = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(519, 2);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(56, 64);
-            this.button11.TabIndex = 10;
-            this.button11.Tag = "格式选择";
-            this.button11.Text = "格式选择";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // btnMirror
-            // 
-            this.btnMirror.Location = new System.Drawing.Point(643, 2);
-            this.btnMirror.Name = "btnMirror";
-            this.btnMirror.Size = new System.Drawing.Size(56, 64);
-            this.btnMirror.TabIndex = 9;
-            this.btnMirror.Tag = "镜像";
-            this.btnMirror.Text = "镜像";
-            this.btnMirror.UseVisualStyleBackColor = true;
-            this.btnMirror.Visible = false;
-            this.btnMirror.Click += new System.EventHandler(this.btnMirror_Click);
-            // 
             // btnMax
             // 
-            this.btnMax.Location = new System.Drawing.Point(703, 2);
+            this.btnMax.Location = new System.Drawing.Point(671, 1);
             this.btnMax.Name = "btnMax";
-            this.btnMax.Size = new System.Drawing.Size(56, 64);
+            this.btnMax.Size = new System.Drawing.Size(67, 64);
             this.btnMax.TabIndex = 8;
             this.btnMax.Tag = "全屏显示";
             this.btnMax.Text = "全屏显示";
@@ -302,9 +227,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(764, 2);
+            this.button5.Location = new System.Drawing.Point(769, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(56, 64);
+            this.button5.Size = new System.Drawing.Size(73, 64);
             this.button5.TabIndex = 3;
             this.button5.Tag = "退出";
             this.button5.Text = "退出";
@@ -313,7 +238,7 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(78, 2);
+            this.btnEdit.Location = new System.Drawing.Point(560, 2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 64);
             this.btnEdit.TabIndex = 1;
@@ -329,7 +254,7 @@
             this.btnVideo.Size = new System.Drawing.Size(75, 64);
             this.btnVideo.TabIndex = 0;
             this.btnVideo.Tag = "实时视频";
-            this.btnVideo.Text = "实时视频";
+            this.btnVideo.Text = "预览";
             this.btnVideo.UseVisualStyleBackColor = true;
             this.btnVideo.Click += new System.EventHandler(this.btnVideo_Click);
             // 
@@ -358,8 +283,8 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.btnPao2);
-            this.panel6.Controls.Add(this.btnPao1);
+            this.panel6.Controls.Add(this.picS);
+            this.panel6.Controls.Add(this.picQ);
             this.panel6.Controls.Add(this.panel3);
             this.panel6.Controls.Add(this.button18);
             this.panel6.Controls.Add(this.button6);
@@ -367,26 +292,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(935, 34);
             this.panel6.TabIndex = 1;
-            // 
-            // btnPao2
-            // 
-            this.btnPao2.Location = new System.Drawing.Point(857, 5);
-            this.btnPao2.Name = "btnPao2";
-            this.btnPao2.Size = new System.Drawing.Size(59, 23);
-            this.btnPao2.TabIndex = 11;
-            this.btnPao2.Tag = "设置";
-            this.btnPao2.Text = "气泵";
-            this.btnPao2.UseVisualStyleBackColor = true;
-            // 
-            // btnPao1
-            // 
-            this.btnPao1.Location = new System.Drawing.Point(769, 6);
-            this.btnPao1.Name = "btnPao1";
-            this.btnPao1.Size = new System.Drawing.Size(68, 23);
-            this.btnPao1.TabIndex = 10;
-            this.btnPao1.Tag = "属性";
-            this.btnPao1.Text = "水泵";
-            this.btnPao1.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -540,6 +445,118 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseUp);
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.panelImgView);
+            this.panel2.Controls.Add(this.panelVideo);
+            this.panel2.Location = new System.Drawing.Point(0, 67);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(935, 366);
+            this.panel2.TabIndex = 1;
+            // 
+            // panelImgView
+            // 
+            this.panelImgView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelImgView.Controls.Add(this.axWindowsMediaPlayer1);
+            this.panelImgView.Controls.Add(this.pictureBox4);
+            this.panelImgView.Location = new System.Drawing.Point(0, 3);
+            this.panelImgView.Name = "panelImgView";
+            this.panelImgView.Size = new System.Drawing.Size(935, 360);
+            this.panelImgView.TabIndex = 2;
+            this.panelImgView.Visible = false;
+            // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(55, 0);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(825, 423);
+            this.axWindowsMediaPlayer1.TabIndex = 3;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 26);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
+            this.toolStripMenuItem1.Tag = "删除";
+            this.toolStripMenuItem1.Text = "删除";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // panelVideo
+            // 
+            this.panelVideo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelVideo.BackColor = System.Drawing.Color.Black;
+            this.panelVideo.Controls.Add(this.lblTime);
+            this.panelVideo.Controls.Add(this.pictureBox1);
+            this.panelVideo.Controls.Add(this.videoSourcePlayer1);
+            this.panelVideo.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panelVideo.Location = new System.Drawing.Point(0, 5);
+            this.panelVideo.Name = "panelVideo";
+            this.panelVideo.Size = new System.Drawing.Size(935, 359);
+            this.panelVideo.TabIndex = 1;
+            // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.BackColor = System.Drawing.Color.Transparent;
+            this.lblTime.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.ForeColor = System.Drawing.Color.Yellow;
+            this.lblTime.Location = new System.Drawing.Point(15, 10);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(0, 19);
+            this.lblTime.TabIndex = 13;
+            this.lblTime.Visible = false;
+            // 
+            // videoSourcePlayer1
+            // 
+            this.videoSourcePlayer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.videoSourcePlayer1.Location = new System.Drawing.Point(0, -5);
+            this.videoSourcePlayer1.Name = "videoSourcePlayer1";
+            this.videoSourcePlayer1.Size = new System.Drawing.Size(935, 399);
+            this.videoSourcePlayer1.TabIndex = 0;
+            this.videoSourcePlayer1.Text = "videoSourcePlayer1";
+            this.videoSourcePlayer1.VideoSource = null;
+            // 
+            // picS
+            // 
+            this.picS.Image = global::DentalImaging.Properties.Resources.水泵关;
+            this.picS.Location = new System.Drawing.Point(848, 2);
+            this.picS.Name = "picS";
+            this.picS.Size = new System.Drawing.Size(30, 30);
+            this.picS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picS.TabIndex = 11;
+            this.picS.TabStop = false;
+            // 
+            // picQ
+            // 
+            this.picQ.Image = global::DentalImaging.Properties.Resources.气泵关;
+            this.picQ.Location = new System.Drawing.Point(780, 2);
+            this.picQ.Name = "picQ";
+            this.picQ.Size = new System.Drawing.Size(30, 30);
+            this.picQ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picQ.TabIndex = 10;
+            this.picQ.TabStop = false;
+            // 
             // image1DataGridViewImageColumn
             // 
             this.image1DataGridViewImageColumn.DataPropertyName = "Image1";
@@ -634,44 +651,6 @@
             // 
             this.bindingSource1.DataSource = typeof(DentalImaging.BindImgListSource);
             // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.panelImgView);
-            this.panel2.Controls.Add(this.panelVideo);
-            this.panel2.Location = new System.Drawing.Point(0, 67);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(935, 366);
-            this.panel2.TabIndex = 1;
-            // 
-            // panelImgView
-            // 
-            this.panelImgView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelImgView.Controls.Add(this.axWindowsMediaPlayer1);
-            this.panelImgView.Controls.Add(this.pictureBox4);
-            this.panelImgView.Location = new System.Drawing.Point(0, 3);
-            this.panelImgView.Name = "panelImgView";
-            this.panelImgView.Size = new System.Drawing.Size(935, 360);
-            this.panelImgView.TabIndex = 2;
-            this.panelImgView.Visible = false;
-            // 
-            // axWindowsMediaPlayer1
-            // 
-            this.axWindowsMediaPlayer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(55, 0);
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(825, 409);
-            this.axWindowsMediaPlayer1.TabIndex = 3;
-            // 
             // pictureBox4
             // 
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -686,48 +665,6 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Visible = false;
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 26);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
-            this.toolStripMenuItem1.Tag = "删除";
-            this.toolStripMenuItem1.Text = "删除";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-            // 
-            // panelVideo
-            // 
-            this.panelVideo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelVideo.BackColor = System.Drawing.Color.Black;
-            this.panelVideo.Controls.Add(this.lblTime);
-            this.panelVideo.Controls.Add(this.pictureBox1);
-            this.panelVideo.Controls.Add(this.videoSourcePlayer1);
-            this.panelVideo.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelVideo.Location = new System.Drawing.Point(0, 5);
-            this.panelVideo.Name = "panelVideo";
-            this.panelVideo.Size = new System.Drawing.Size(935, 359);
-            this.panelVideo.TabIndex = 1;
-            // 
-            // lblTime
-            // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.BackColor = System.Drawing.Color.Transparent;
-            this.lblTime.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.ForeColor = System.Drawing.Color.Yellow;
-            this.lblTime.Location = new System.Drawing.Point(15, 10);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(0, 19);
-            this.lblTime.TabIndex = 13;
-            this.lblTime.Visible = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -739,39 +676,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // videoSourcePlayer1
-            // 
-            this.videoSourcePlayer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.videoSourcePlayer1.Location = new System.Drawing.Point(0, -5);
-            this.videoSourcePlayer1.Name = "videoSourcePlayer1";
-            this.videoSourcePlayer1.Size = new System.Drawing.Size(935, 399);
-            this.videoSourcePlayer1.TabIndex = 0;
-            this.videoSourcePlayer1.Text = "videoSourcePlayer1";
-            this.videoSourcePlayer1.VideoSource = null;
-            //// 
-            //// tabPage2
-            //// 
-            //this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            //this.tabPage2.Name = "tabPage2";
-            //this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            //this.tabPage2.Size = new System.Drawing.Size(935, 571);
-            //this.tabPage2.TabIndex = 1;
-            //this.tabPage2.Tag = "一般模式";
-            //this.tabPage2.Text = "一般模式";
-            //this.tabPage2.UseVisualStyleBackColor = true;
-            //// 
-            //// tabPage3
-            //// 
-            //this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            //this.tabPage3.Name = "tabPage3";
-            //this.tabPage3.Size = new System.Drawing.Size(935, 571);
-            //this.tabPage3.TabIndex = 2;
-            //this.tabPage3.Tag = "人像模式";
-            //this.tabPage3.Text = "人像模式";
-            //this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // dataGridViewImageColumn1
             // 
@@ -870,7 +774,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(919, 574);
-            //this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pan对比);
             this.Controls.Add(this.panelTool);
@@ -885,8 +788,6 @@
             this.Load += new System.EventHandler(this.FormPicture_Load);
             this.Shown += new System.EventHandler(this.FormPicture_Shown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormPicture_KeyPress);
-            //this.tabControl1.ResumeLayout(false);
-            //this.tabPage1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panEdit.ResumeLayout(false);
             this.panPai.ResumeLayout(false);
@@ -895,14 +796,16 @@
             this.panel3.ResumeLayout(false);
             this.panelImgList.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panelImgView.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.panelVideo.ResumeLayout(false);
             this.panelVideo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picQ)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -941,10 +844,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panPai;
         private System.Windows.Forms.Button btnMax;
-        private System.Windows.Forms.Button btnMirror;
-        private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Panel pan对比;
-        private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
@@ -976,7 +876,7 @@
         private System.Windows.Forms.DataGridViewImageColumn image9DataGridViewImageColumn;
         private System.Windows.Forms.DataGridViewImageColumn image10DataGridViewImageColumn;
         private System.Windows.Forms.Label lblTime;
-        private System.Windows.Forms.Button btnPao2;
-        private System.Windows.Forms.Button btnPao1;
+        private System.Windows.Forms.PictureBox picS;
+        private System.Windows.Forms.PictureBox picQ;
     }
 }

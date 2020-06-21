@@ -2,6 +2,7 @@
 using LibUsbDotNet.Main;
 using log4net;
 using System;
+using System.IO.Ports;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
@@ -185,6 +186,76 @@ namespace DentalImaging.Help
             {
                 return null;
             }
+        }
+    }
+
+    public class COMHelp : IMessageBase
+    {
+        /// <summary>
+        /// 数据位
+        /// </summary>
+        private int intDataBits = 8;
+        /// <summary>
+        /// 波特率
+        /// </summary>
+        private int intBaudRate = 115200;
+        /// <summary>
+        /// 串口数据访问类
+        /// </summary>
+        private SerialPort comPort = new SerialPort();        
+
+        public COMHelp(string portName)
+        {
+            comPort.PortName = portName;
+            comPort.DataBits = intDataBits;
+            comPort.BaudRate = intBaudRate;
+            comPort.ReadTimeout = 3000;
+            comPort.Parity = Parity.None;
+            comPort.StopBits = StopBits.One;
+        }
+
+        public void Close()
+        {
+            if (comPort.IsOpen)
+                comPort.Close();
+        }
+
+        public void SendMessage(string message)
+        {
+            byte[] writeBuffer = new byte[8];
+            var str = message.Split(' ');
+            for (int i = 0; i < 8; i++)
+            {
+                if (i < str.Length)
+                {
+                    writeBuffer[i] = Convert.ToByte(str[i]);
+                }
+            }
+            if (comPort.IsOpen)
+            {
+                comPort.Write(writeBuffer, 0, writeBuffer.Length);
+            }
+        }
+
+        public byte[] UsbMessage()
+        {
+            if (!comPort.IsOpen)
+                comPort.Open();
+
+            var readLength = comPort.BytesToRead;
+            byte[] reDatas = new byte[readLength];
+            comPort.Read(reDatas, 0, readLength);
+            //StringBuilder sb = new StringBuilder();
+            //for (int i = 0; i < reDatas.Length; i++)
+            //{
+            //    sb.AppendFormat("{0:X2}" + " ", reDatas[i]);
+            //}
+            //return sb.ToString();
+            if (reDatas.Length >= 8)
+                return reDatas.Skip(0).Take(8).ToArray();
+
+
+            return new byte[8];
         }
     }
 }

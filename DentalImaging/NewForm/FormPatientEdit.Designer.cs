@@ -126,6 +126,7 @@
             this.txtName.Size = new System.Drawing.Size(142, 20);
             this.txtName.TabIndex = 5;
             this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
+            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
             // txtLink
             // 
@@ -134,6 +135,7 @@
             this.txtLink.Name = "txtLink";
             this.txtLink.Size = new System.Drawing.Size(155, 20);
             this.txtLink.TabIndex = 8;
+            this.txtLink.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLink_KeyPress);
             // 
             // txtNo
             // 
@@ -143,6 +145,7 @@
             this.txtNo.Size = new System.Drawing.Size(262, 20);
             this.txtNo.TabIndex = 7;
             this.txtNo.TextChanged += new System.EventHandler(this.txtNo_TextChanged);
+            this.txtNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNo_KeyPress);
             // 
             // txtAdress
             // 

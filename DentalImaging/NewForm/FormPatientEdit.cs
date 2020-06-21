@@ -8,6 +8,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace DentalImaging.NewForm
@@ -115,14 +116,31 @@ namespace DentalImaging.NewForm
                     else
                     {
                         v.Number = User.CurrentPatient.Number;
-                        if(v.FName != User.CurrentPatient.FName || v.BirthDay != User.CurrentPatient.BirthDay)
+                        v.Historys = User.CurrentPatient.Historys;
+                        if (v.FName != User.CurrentPatient.FName || v.BirthDay != User.CurrentPatient.BirthDay)
                         {
+                            var cp = User.CurrentPatient;
                             try
                             {
                                 Directory.Move(User.PatientPath, $"{User.DBPath}\\{v.FName + v.BirthDay}");
+                                if (v.Historys != null && v.Historys.Count > 0)
+                                {
+                                    User.CurrentPatient = v;
+                                    for (int h = 0;h < v.Historys.Count;h++)
+                                    {
+                                        var history = v.Historys[h];
+                                        for (int i =0;i< history.imgInfos.Count;i++)
+                                        {
+                                            var imgInfo = history.imgInfos[i];
+                                            imgInfo.IsSaveToFile = false;
+                                        }
+                                        User.SaveHistorys(history);
+                                    }
+                                }                                
                             }
                             catch(Exception ex)
                             {
+                                User.CurrentPatient = cp;
                                 CommHelp.ShowError($"{GetText("修改信息失败，请检查")}{User.PatientPath}{GetText("没有被占用")}");
                                 return;
                             }
@@ -450,6 +468,30 @@ namespace DentalImaging.NewForm
         private string GetText(string text)
         {
             return LanguageHelp.GetTextLanguage(text);
+        }
+
+        private void txtNo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //判断按键是不是要输入的类型。
+            if (((int)e.KeyChar < 48 || (int)e.KeyChar > 57) && (int)e.KeyChar != 8)
+                e.Handled = true;
+        }
+
+        private void txtLink_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //判断按键是不是要输入的类型。
+            if (((int)e.KeyChar < 48 || (int)e.KeyChar > 57) && (int)e.KeyChar != 8)
+                e.Handled = true;
+        }
+
+        private void txtName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Regex rg = new Regex("^[\u4e00-\u9fa5]$");  //正则表达式
+            if (!rg.IsMatch(e.KeyChar.ToString()) && e.KeyChar != '\b') //'\b'是退格键
+            {
+
+                e.Handled = true;
+            }
         }
     }    
 }

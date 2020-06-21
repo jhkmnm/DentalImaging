@@ -118,13 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="timg (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\timg (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1543660125(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1543660125(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <!--<data name="IDB_FOLDER" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Patient.exe-EXT\IDB_FOLDER.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>-->
-  <data name="timg (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\timg (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="气泵关" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\IOC\气泵关.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="气泵开" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\IOC\气泵开.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="水泵关" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\IOC\水泵关.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="水泵开" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\IOC\水泵开.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
