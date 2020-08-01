@@ -212,6 +212,7 @@ namespace DentalImaging.Help
             comPort.ReadTimeout = 3000;
             comPort.Parity = Parity.None;
             comPort.StopBits = StopBits.One;
+            comPort.Open();
         }
 
         public void Close()

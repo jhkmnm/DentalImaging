@@ -255,6 +255,7 @@ namespace DentalImaging
                             {
                                 messageHelp = new COMHelp(vPortName);
                                 messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PSend_Dri_Test]);
+                                Thread.Sleep(30);
                                 var msg = messageHelp.UsbMessage();
                                 var message = string.Join(" ", msg);
                                 if (UsbMessage.Orders.ContainsKey(message) && UsbMessage.Orders[message] == OrderType.MTP_Dri_Test)
@@ -263,6 +264,8 @@ namespace DentalImaging
                                     messageHelp.SendMessage(UsbMessage.OrdersB[OrderType.PSend_Con_Ready]);
                                     break;
                                 }
+                                else
+                                    messageHelp.Close();
                             }
                             if (!IsConntion)
                             {

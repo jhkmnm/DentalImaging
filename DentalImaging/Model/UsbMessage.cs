@@ -58,6 +58,9 @@ namespace DentalImaging.Model
             Orders.Add("90 165 8 255 161 17 165 90", OrderType.MTP_Dri_Test);     //设备连接
             Orders.Add("90 165 8 243 161 17 165 90", OrderType.MTP_Con_Ready);     //通讯readly
 
+            //Orders.Add("5A A5 08 FF A1 11 A5 5A", OrderType.MTP_Dri_Test);     //设备连接
+            //Orders.Add("5A A5 08 F3 A1 11 A5 5A", OrderType.MTP_Con_Ready);     //通讯readly
+
 
             OrdersB.Add(OrderType.Sleep, "1 1 1 1 1 1 1 1");
 
@@ -107,6 +110,8 @@ namespace DentalImaging.Model
 
             OrdersB.Add(OrderType.PSend_Dri_Test, "90 165 8 255 162 17 165 90");     //设备连接
             OrdersB.Add(OrderType.PSend_Con_Ready, "90 165 8 243 161 17 165 90");     //通讯readly
+            //OrdersB.Add(OrderType.PSend_Dri_Test, "5A A5 08 FF A2 11 A5 5A");     //设备连接
+            //OrdersB.Add(OrderType.PSend_Con_Ready, "5A A5 08 F3 A1 11 A5 5A");     //通讯readly
         }        
     }
 
