@@ -1,15 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DentalImaging", "DentalImaging\DentalImaging.csproj", "{DC08EDB8-CBEB-44A0-8928-C5B42EBBB2D5}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "口腔内窥镜成像软件(Windows)", "Setup\Setup.vdproj", "{DB622726-073A-4BB1-BD95-6310781525F4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegisterKey", "RegisterKey\RegisterKey.csproj", "{F36171E4-68BA-4019-B9FC-605EFCC3C5B3}"
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupProject", "SetupProject\SetupProject.vdproj", "{0372BF26-F608-427E-8179-BA7C619180CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,16 +41,6 @@ Global
 		{DC08EDB8-CBEB-44A0-8928-C5B42EBBB2D5}.SingleImage|Any CPU.Build.0 = Release|Any CPU
 		{DC08EDB8-CBEB-44A0-8928-C5B42EBBB2D5}.SingleImage|x86.ActiveCfg = Release|x86
 		{DC08EDB8-CBEB-44A0-8928-C5B42EBBB2D5}.SingleImage|x86.Build.0 = Release|x86
-		{DB622726-073A-4BB1-BD95-6310781525F4}.CD_ROM|Any CPU.ActiveCfg = Release
-		{DB622726-073A-4BB1-BD95-6310781525F4}.CD_ROM|x86.ActiveCfg = Release
-		{DB622726-073A-4BB1-BD95-6310781525F4}.Debug|Any CPU.ActiveCfg = Debug
-		{DB622726-073A-4BB1-BD95-6310781525F4}.Debug|x86.ActiveCfg = Debug
-		{DB622726-073A-4BB1-BD95-6310781525F4}.DVD-5|Any CPU.ActiveCfg = Debug
-		{DB622726-073A-4BB1-BD95-6310781525F4}.DVD-5|x86.ActiveCfg = Debug
-		{DB622726-073A-4BB1-BD95-6310781525F4}.Release|Any CPU.ActiveCfg = Release
-		{DB622726-073A-4BB1-BD95-6310781525F4}.Release|x86.ActiveCfg = Release
-		{DB622726-073A-4BB1-BD95-6310781525F4}.SingleImage|Any CPU.ActiveCfg = Release
-		{DB622726-073A-4BB1-BD95-6310781525F4}.SingleImage|x86.ActiveCfg = Release
 		{F36171E4-68BA-4019-B9FC-605EFCC3C5B3}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
 		{F36171E4-68BA-4019-B9FC-605EFCC3C5B3}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
 		{F36171E4-68BA-4019-B9FC-605EFCC3C5B3}.CD_ROM|x86.ActiveCfg = Release|Any CPU
@@ -75,18 +61,11 @@ Global
 		{F36171E4-68BA-4019-B9FC-605EFCC3C5B3}.SingleImage|Any CPU.Build.0 = Release|Any CPU
 		{F36171E4-68BA-4019-B9FC-605EFCC3C5B3}.SingleImage|x86.ActiveCfg = Release|Any CPU
 		{F36171E4-68BA-4019-B9FC-605EFCC3C5B3}.SingleImage|x86.Build.0 = Release|Any CPU
-		{0372BF26-F608-427E-8179-BA7C619180CD}.CD_ROM|Any CPU.ActiveCfg = Release
-		{0372BF26-F608-427E-8179-BA7C619180CD}.CD_ROM|x86.ActiveCfg = Release
-		{0372BF26-F608-427E-8179-BA7C619180CD}.Debug|Any CPU.ActiveCfg = Debug
-		{0372BF26-F608-427E-8179-BA7C619180CD}.Debug|x86.ActiveCfg = Debug
-		{0372BF26-F608-427E-8179-BA7C619180CD}.DVD-5|Any CPU.ActiveCfg = Debug
-		{0372BF26-F608-427E-8179-BA7C619180CD}.DVD-5|x86.ActiveCfg = Debug
-		{0372BF26-F608-427E-8179-BA7C619180CD}.Release|Any CPU.ActiveCfg = Release
-		{0372BF26-F608-427E-8179-BA7C619180CD}.Release|x86.ActiveCfg = Release
-		{0372BF26-F608-427E-8179-BA7C619180CD}.SingleImage|Any CPU.ActiveCfg = Release
-		{0372BF26-F608-427E-8179-BA7C619180CD}.SingleImage|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50B3282E-0B3D-43FA-B2FE-1B04320D37EA}
 	EndGlobalSection
 EndGlobal

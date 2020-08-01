@@ -153,7 +153,23 @@ namespace DentalImaging
                 return false;
             }
             selectedDeviceIndex = 0;
-            _usbCamera = new VideoCaptureDevice(videoDevices[selectedDeviceIndex].MonikerString);//连接摄像头。
+            string monikerString = "";
+            foreach(FilterInfo filter in videoDevices)
+            {
+                logger.Info("找到摄像头:" + filter.Name);
+                if (filter.Name == "SKT-OL400C-13A")
+                {
+                    monikerString = filter.MonikerString;
+                    break;
+                }
+            }
+            if (string.IsNullOrEmpty(monikerString))
+            {
+                CommHelp.ShowTips("设备未连接");
+                this.Close();
+                return false;
+            }
+            _usbCamera = new VideoCaptureDevice(monikerString);//连接摄像头。
             foreach (var v in _usbCamera.VideoCapabilities)
             {
                 if (v.FrameSize.Width == width)
